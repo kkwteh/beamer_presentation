@@ -1,4 +1,5 @@
 \documentclass{beamer}
+\usetheme{Marburg}
 
 \usepackage{ esint }
 
@@ -124,8 +125,88 @@
 
 
 \title{Dirac Spectra, Summation Formulae, and the Spectral Action} \author{Kevin Teh} \date{May 17, 2013}
+
+
+\makeatletter
+  \setbeamertemplate{sidebar \beamer@sidebarside}
+  {
+    \beamer@tempdim=\beamer@sidebarwidth%
+    \advance\beamer@tempdim by -6pt%
+    \vskip4em%
+    \insertverticalnavigation{\beamer@sidebarwidth}%
+    \vfill
+    \ifx\beamer@sidebarside\beamer@lefttext%
+    \else%
+      \usebeamercolor{normal text}%
+      \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+      \vskip2pt%
+    \fi%
+  }%
+
+  \ifx\beamer@sidebarside\beamer@lefttext%
+    \defbeamertemplate*{sidebar right}{sidebar theme}
+    {%
+      \vfill%
+      \llap{\usebeamertemplate***{navigation symbols}\hskip0.1cm}%
+      \vskip2pt}
+  \fi
+
+\setbeamertemplate{section in sidebar}%{sidebar theme}
+{%
+  \vbox{%
+    \vskip1ex%
+    \beamer@sidebarformat{3pt}{section in sidebar}{\insertsectionheadnumber
+~\insertsectionhead}%
+  }%
+}
+\setbeamertemplate{section in sidebar shaded}%{sidebar theme}
+{%
+  \vbox{%
+    \vskip1ex%
+    \beamer@sidebarformat{3pt}{section in sidebar shaded}{\insertsectionheadnumber
+~\insertsectionhead}%
+  }%
+}
+\makeatother
+
+\title{Dirac Spectra, Summation Formulae, and the Spectral Action}
+\author{Kevin Teh}
+\institute{Caltech}
+\date{May 17, 2013}
+
 \begin{document}
-\maketitle
-\begin{frame} \frametitle{Hello world!}\end{frame}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\section[Outline]{First Section}
+\frame{\tableofcontents}
+
+\section{Introduction}
+
+\begin{frame}
+\frametitle{Basics}
+\begin{itemize}
+\item A
+\pause
+\item B
+\pause
+\item C
+\end{itemize}
+\end{frame}
+
+\subsection{More basics}
+
+\begin{frame}
+\frametitle{something goes here}
+more stuff
+\end{frame}
+
+\section{My work}
+
+\begin{frame}
+my stuff...
+\end{frame}
 
 \end{document}
