@@ -180,27 +180,37 @@
 \titlepage
 \end{frame}
 
-\section[Outline]{First Section}
-\frame{\tableofcontents}
+\section{Intro to NCG and spectral action}
 
-\section{Introduction}
+\subsection{Spectral Triples}
+\begin{frame}
+\frametitle{Spectral Triples - Definition}
+Definition: A spectral triple $(\cA, \cH, \cD)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $\cD$ with compact resolvent such that all commutators $[\cD, a]$ are bounded for $a \in \cA$.
+\pause
+
+A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $\cD$.
+\end{frame}
+
 
 \begin{frame}
-\frametitle{Basics}
+\frametitle{Spectral Triples - Example}
+Compact spin manifold $M$
 \begin{itemize}
-\item A
-\pause
-\item B
-\pause
-\item C
+\item $\cA = C^{\infty}(M)$
+\item $\cH = L^2(S)$, square-integrable sections of spinor bundle
+\item $\cD$ Dirac operator associated with spin structure
 \end{itemize}
 \end{frame}
 
-\subsection{More basics}
 
 \begin{frame}
-\frametitle{something goes here}
-more stuff
+\frametitle{Spectral Triples - Real Structure}
+Definition: A real structure of $KO$-dimension $n \in \Z/8$ on a spectral triple $(\cA, \cH, \cD)$ is an anti linear isometry $J: \cH \rightarrow \cH$, with the property that
+\begin{itemize}
+\item $J^2 = \epsilon$
+\item $J D = \epsilon ' D J$
+\item $J \gamma = \epsilon '' \gamma J $ (if the spectral triple is even)
+\end{itemize}
 \end{frame}
 
 \section{My work}
