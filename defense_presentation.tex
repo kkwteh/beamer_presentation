@@ -185,70 +185,71 @@
 \subsection{Spectral Triples}
 \begin{frame}
 \frametitle{Spectral Triples - Definition}
-Definition: A spectral triple $(\cA, \cH, \cD)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $\cD$ with compact resolvent such that all commutators $[\cD, a]$ are bounded for $a \in \cA$.
+\begin{block}{Definition}
+A spectral triple $(\cA, \cH, \cD)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $\cD$ with compact resolvent such that all commutators $[\cD, a]$ are bounded for $a \in \cA$.
+\end{block}
 \pause
 
+\begin{block}{}
 A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $\cD$.
+\end{block}
 \end{frame}
 
 
 \begin{frame}
 \frametitle{Spectral Triples - Example}
-Compact spin manifold $M$
+\begin{exampleblock}{Compact spin manifold $M$}
 \begin{itemize}
 \item $\cA = C^{\infty}(M)$
-\item $\cH = L^2(S)$, square-integrable sections of spinor bundle
+\item $\cH = L^2(\Gamma, S)$, square-integrable sections of spinor bundle
 \item $\cD$ Dirac operator associated with spin structure
 \end{itemize}
+\end{exampleblock}
 \end{frame}
-
+\subsection{Spectral Action}
 
 \begin{frame}
-\frametitle{Spectral Triples - Real Structure}
-Definition: A real structure of $KO$-dimension $n \in \Z/8$ on a spectral triple $(\cA, \cH, \cD)$ is an anti linear isometry $J: \cH \rightarrow \cH$, with the property that
+\frametitle{Spectral Action}
+
+For a spectral triple, $(\cA, \cH, \cD)$, the spectral action is given by
+\[
+\Tr f(\cD / \Lambda)
+\]
+
+\pause
+
 \begin{itemize}
-\item $J^2 = \epsilon$
-\item $J D = \epsilon ' D J$
-\item $J \gamma = \epsilon '' \gamma J $ (if the spectral triple is even)
+\item $f \in \mathcal{S} (\R)$
+\item $\Lambda > 0$
 \end{itemize}
 
 \pause
 
-The numbers $\epsilon, \epsilon', \epsilon'' \in \{ -1, 1\}$ are a function of $n \mod 8$ given by
-
-\begin{tabular} {| c || c | c | c | c | c | c | c | c | }
-\hline
-n & 0 & 1 & 2 & 3 & 4 & 5 & 6 & 7\\
-\hline
-$\epsilon$ & 1 & 1 & -1 & -1 & -1 & -1 & 1 & 1\\
-\hline
-$\epsilon'$ & 1 & -1 & 1 & 1 & 1 & -1 & 1 & 1\\
-\hline
-$\epsilon''$ & 1 &  & -1 &  & 1 &  & -1 & \\
-\hline
-\end{tabular}
+The spectral action plays a central role in the Noncommutative Standard Model
 \end{frame}
 
 
-\begin{frame}
-\frametitle{Spectral Triples - Real Structure}
-Moreover, the action of $\cA$ satisfies the commutation rule 
-\[
-[a, b^0] = 0 \forall a, b \in \cA
-\]
-where
-\[
-b^0 = Jb^* J^{-1} \forall b \in \cA
-\]
-and $\cD$ satisfies the order one condition:
-\[
-[[\cD, a], b^0] = 0, \forall a,b \in \cA
-\]
-\end{frame}
-\section{My work}
+\subsection{Noncommutative Standard Model}
 
 \begin{frame}
-my stuff...
+\frametitle{Noncommutative Standard Model}
+
+\begin{block}{}
+The standard model of physics using the mathematical framework of noncommutative geometry 
+\end{block}
+
+\pause
+
+\begin{block}{}
+Simple input for the model: the finite-dimensional algebra $\C \oplus \H \oplus \H \oplus M_3(\C)$
+\end{block}
+
+\pause
+
+\begin{block}{}
+Spacetime is modeled as the product geometry of a finite-dimensional spectral triple of the above algebra with a 4-dimensional compact Riemannian spin manifold
+\end{block}
+
 \end{frame}
 
 \end{document}
