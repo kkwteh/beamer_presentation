@@ -184,72 +184,108 @@
 
 \subsection{Spectral Triples}
 \begin{frame}
-\frametitle{Spectral Triples - Definition}
-\begin{block}{Definition}
-A spectral triple $(\cA, \cH, \cD)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $\cD$ with compact resolvent such that all commutators $[\cD, a]$ are bounded for $a \in \cA$.
-\end{block}
-\pause
+	\frametitle{Spectral Triples - Definition}
+	\begin{block}{Definition}
+		A spectral triple $(\cA, \cH, \cD)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $\cD$ with compact resolvent such that all commutators $[\cD, a]$ are bounded for $a \in \cA$.
+	\end{block}
+	\pause
 
-\begin{block}{}
-A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $\cD$.
+	\begin{block}{}
+		A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $\cD$.
 \end{block}
 \end{frame}
 
 
 \begin{frame}
-\frametitle{Spectral Triples - Example}
-\begin{exampleblock}{Compact spin manifold $M$}
-\begin{itemize}
-\item $\cA = C^{\infty}(M)$
-\item $\cH = L^2(\Gamma, S)$, square-integrable sections of spinor bundle
-\item $\cD$ Dirac operator associated with spin structure
-\end{itemize}
-\end{exampleblock}
+	\frametitle{Spectral Triples - Example}
+	\begin{exampleblock}{Compact spin manifold $M$}
+		\begin{itemize}
+			\item $\cA = C^{\infty}(M)$
+			\item $\cH = L^2(\Gamma, S)$, square-integrable sections of spinor bundle
+			\item $\cD$ Dirac operator associated with spin structure
+		\end{itemize}
+	\end{exampleblock}
 \end{frame}
+
 \subsection{Spectral Action}
 
 \begin{frame}
-\frametitle{Spectral Action}
+	\frametitle{Spectral Action}
 
-For a spectral triple, $(\cA, \cH, \cD)$, the spectral action is given by
-\[
-\Tr f(\cD / \Lambda)
-\]
+	\begin{block}{}
+		For a spectral triple, $(\cA, \cH, \cD)$, the spectral action is given by
+		\[
+		\Tr f(\cD / \Lambda)
+		\]
+	\end{block}
 
-\pause
+	\pause
 
-\begin{itemize}
-\item $f \in \mathcal{S} (\R)$
-\item $\Lambda > 0$
-\end{itemize}
+	\begin{itemize}
+		\item $f \in \mathcal{S} (\R)$
+		\item $\Lambda > 0$
+	\end{itemize}
 
-\pause
+	\pause
 
-The spectral action plays a central role in the Noncommutative Standard Model
+	\begin{block}{}
+		The spectral action plays a central role in the Noncommutative Standard Model
+	\end{block}
+
 \end{frame}
 
 
 \subsection{Noncommutative Standard Model}
 
 \begin{frame}
-\frametitle{Noncommutative Standard Model}
+	\frametitle{Noncommutative Standard Model}
 
-\begin{block}{}
-The standard model of physics using the mathematical framework of noncommutative geometry 
-\end{block}
+	\begin{block}{}
+		A principal application of noncommutative geometry is a formulation of the standard model of physics using the mathematical framework of noncommutative geometry.
+	\end{block}
 
-\pause
+	\pause
 
-\begin{block}{}
-Simple input for the model: the finite-dimensional algebra $\C \oplus \H \oplus \H \oplus M_3(\C)$
-\end{block}
+	\begin{block}{}
+		Simple input for the model: the finite-dimensional algebra $\C \oplus \H \oplus \H \oplus M_3(\C)$
+	\end{block}
 
-\pause
+	\pause
 
-\begin{block}{}
-Spacetime is modeled as the product geometry of a finite-dimensional spectral triple of the above algebra with a 4-dimensional compact Riemannian spin manifold
-\end{block}
+	\begin{block}{}
+		Spacetime is modeled as the product geometry of a finite-dimensional spectral triple of the above algebra with a 4-dimensional compact Riemannian spin manifold and one may recover the usual standard model
+	\end{block}
 
 \end{frame}
 
+
+\begin{frame}
+	\frametitle{Noncommutative Standard Model}
+	\begin{block}{}
+		By considering ``inner fluctuations'' of the Dirac operator, one obtains the gauge bosons of the theory.
+	\end{block}
+\end{frame}
+
+\section{Perturbative vs Non-perturbative}
+
+\begin{frame}
+	\frametitle{Perturbative vs Non-perturbative}
+	\begin{block}{Perturbative expansion of spectral action via Gilkey's Theorem}
+		\[
+			\Tr f (D/\Lambda) \sim 2 \Lambda^4 f_4 a_0 + 2 \Lambda^2 f_2 a_2 + f_0 a_4 + \cdots + \Lambda^{-2k} f_{-2k} a_{4+2k} + \cdots
+		\]
+
+		\begin{align*}
+			f_k &= \int_{0}^{\infty} f(u) u^{k-1} du, ~ k>0 \\
+			&= f(0), ~ k = 0\\
+			&= (-1)^{-k/2} \frac{(-k/2)!}{-k!}f^{(-k)}(0), ~ k < 0
+		\end{align*}
+	\end{block}
+
+	\pause
+
+	\begin{alertblock}{This is only an asymptotic series}
+
+	\end{alertblock}
+\end{frame}
 \end{document}
