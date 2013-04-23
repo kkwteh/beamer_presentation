@@ -260,13 +260,22 @@
 
 
 \begin{frame}
-	\frametitle{Noncommutative Standard Model}
+	\frametitle{Noncommutative Standard Model and Spectral Action}
 	\begin{block}{}
-		By considering ``inner fluctuations'' of the Dirac operator, one obtains the gauge bosons of the theory.
+		By computing the spectral action for ``inner fluctuations'' of the Dirac operator, one obtains the gauge bosons of the theory.
+	\end{block}
+
+	\begin{block}{}
+		To give a flavour of what this involves, one must first equip the geometry with a real structure, $J$ (an antilinear unitary operator). Inner fluctuations of the Dirac operator are given by
+		\[
+		D_A = D + A + J A J^{-1},~ A = \sum a_j [D, b_j],~ a_j, b_j \in \cA,~ A = A^*
+		\]
 	\end{block}
 \end{frame}
 
-\section{Perturbative vs Non-perturbative}
+\section{Spectral Action}
+
+\subsection{Perturbative vs Non-perturbative}
 
 \begin{frame}
 	\frametitle{Perturbative vs Non-perturbative}
@@ -287,5 +296,49 @@
 	\begin{alertblock}{This is only an asymptotic series}
 
 	\end{alertblock}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Perturbative vs Non-perturbative}
+	\begin{block}{Nonperturbative calculation of the spectral action}
+		\[
+			\Tr f (D/\Lambda) = \sum_{n \in \Z} h(n) = \sum_{n \in \Z} \widehat{h}(n)
+		\]
+	\end{block}
+
+	\pause
+
+	\begin{block}{}
+		Uses the Poisson summation formula
+
+		Returns a convergent series
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The First Example: $SU(2)$}
+	\begin{block}{Usual Expression of Dirac Spectrum}
+		$\rm{Spec}(D) = \{ \pm (\frac{3}{2} + k) | k \in \Z, k \geq 0\}$
+
+		multiplicity of $(\frac{3}{2} + k)$ is $2 {k+2} \choose {k}$
+	\end{block}
+
+	\pause
+
+	\begin{block}{Alternative Expression}
+		$\rm{Spec}(D) = \{n + 1/2 | n \in \Z \}$
+
+		multiplicity of $n + 1/2$ is $n(n+1)$
+	\end{block}
+
+	\pause
+
+	\begin{block}{}
+		Important features of alternative expression:
+		\begin{itemize}
+			\item spectrum is indexed by $\Z$
+			\item multiplicity is a polynomial, and in particular, smooth
+		\end{itemize}
+	\end{block}
 \end{frame}
 \end{document}
