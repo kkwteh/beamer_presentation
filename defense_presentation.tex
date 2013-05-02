@@ -186,12 +186,12 @@
 \begin{frame}
 	\frametitle{Spectral Triples - Definition}
 	\begin{block}{Definition}
-		A spectral triple $(\cA, \cH, \cD)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $\cD$ with compact resolvent such that all commutators $[\cD, a]$ are bounded for $a \in \cA$.
+		A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
 	\end{block}
 	\pause
 
 	\begin{block}{}
-		A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $\cD$.
+		A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $D$.
 \end{block}
 \end{frame}
 
@@ -201,8 +201,8 @@
 	\begin{exampleblock}{Compact spin manifold $M$}
 		\begin{itemize}
 			\item $\cA = C^{\infty}(M)$
-			\item $\cH = L^2(\Gamma, S)$, square-integrable sections of spinor bundle
-			\item $\cD$ Dirac operator associated with spin structure
+			\item $\cH = L^2(M, S)$, square-integrable sections of spinor bundle
+			\item $D$ Dirac operator associated with spin structure
 		\end{itemize}
 	\end{exampleblock}
 \end{frame}
@@ -213,9 +213,9 @@
 	\frametitle{Spectral Action}
 
 	\begin{block}{}
-		For a spectral triple, $(\cA, \cH, \cD)$, the spectral action is given by
+		For a spectral triple, $(\cA, \cH, D)$, the spectral action is given by
 		\[
-		\Tr f(\cD / \Lambda)
+		\Tr f(D / \Lambda)
 		\]
 	\end{block}
 
@@ -430,9 +430,57 @@
 \end{frame}
 
 \section{Coset spaces of $SU(2)$}
+
 \begin{frame}
-	\frametitle{Summary of results}
-	Theorem:
+	\frametitle{Coset spaces of $SU(2)$}
+	\begin{block}{}
+		The spaces we are considering are the Riemannian homogeneous spaces $SU(2)/\Gamma$ where $\Gamma$ is a finite subgroup of $SU(2)$.
+
+		Each of the following groups are subgroups of $SU(2)$ and are unique up to conjugacy:
+		\begin{itemize}
+			\item cyclic group of order $N$, $N = 1,2,3,\ldots$
+			\item dicyclic group of order $4N$, $N = 2,3,\ldots$
+			\item binary tetrahedral group
+			\item binary octahedral group
+			\item binary icosahedral group
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Coset spaces of $SU(2)$ - Spectrum}
+	\begin{block}{}
+		The Hilbert space of $L^2$-spinors of $G/H$ may be given the representation theoretic form
+
+		\[
+			\overline{\oplus_{\gamma \in \hat{G}} V_{\gamma} \otimes \Hom_{H}(V_{\gamma}, \Sigma_{n})}
+		\]
+	\end{block}
+
+	\pause
+
+	\begin{block}{}
+		$\Sigma_{n}$ is the spinor representation space of $\Spin(n)$
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Coset spaces of $SU(2)$ - Dirac operator}
+	\begin{block}{B\"ar}
+		In general, there is an expression for the action of the Dirac operator on the representation-theoretic space. On $SU(2)$
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Coset spaces of $SU(2)$ Summary of results}
+	Theorem (Teh):
+	The Dirac spectra of $SU(2) / \Gamma$ may be decomposed into several arithmetic progressions such that on each arithmetic progression the multiplicities of the Dirac operator are simple polynomials of the eigenvalues.
+
+	As a result, by using the Poisson summation formula, one obtains a nonperturbative expression for the spectral action:
+
+	\[
+	\Tr f(D/\Lambda) = \frac{1}{|\Gamma|}(\Lambda^3 \widehat{f}^{(2)}(0) -\frac{1}{4} \Lambda \widehat{f}(0)) + O(\Lambda^{-k})
+	\]
 \end{frame}
 
 \begin{frame}
@@ -453,20 +501,118 @@
 	\end{block}
 \end{frame}
 
+\section{Coset spaces of $SU(2)$ with matter}
+\begin{frame}
+	\frametitle{Coset spaces of $SU(2)$ with matter Summary of results}
+\end{frame}
+
 \section{Bieberbach manifolds}
 \begin{frame}
 	\frametitle{Summary of results}
+	Theorem (Teh):
 \end{frame}
 
 \begin{frame}
-	\frametitle{Summary of results}
+	\frametitle{Calculation}
 
-	\begin{figure}
-	\includegraphics[scale=0.4]{g3}
-	\caption{Lattice decomposition for $G3$ computation.   Six regions and the set $l=m$.  The dashed lines indicate one of the boundary lines which define the region $\tilde{I}$ along with its images under the symmetries of $\lambda_{klm}$. The other boundary line of $\tilde{I}$ overlaps with the boundary of $I$. \label{g3Fig}}
-	\end{figure}
+	\begin{block}{Strategy}
+	Use linear transformations of the parameters of the spectrum to almost cover $\Z ^3$.  By almost cover, I mean that 2-dimensional, 1-dimensional or 0-dimensional sublattices of $\Z^2$ through the origin may be covered multiple times, or not at all.
+	\end{block}
 \end{frame}
 
-\section{Coset spaces of $SU(2)$ with matter}
+\begin{frame}
+	\frametitle{Easiest Case: Torus}
+	\begin{block}{Parameters}
+		$\{(m,n,p) \in \Z ^3 \}$
+	\end{block}
+	\begin{block}{Eigenvalues}
+		$\pm 2 \pi \sqrt{(m-a)^2 + (n-b)^2 + (p-c)^2}$
+		$a$,$b$,$c$ are constants depending on the choice of spin structure.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{G2(a)}
+		\begin{tabular}[]{lr}
+\includegraphics[scale=0.15]{g2alp} & \includegraphics[scale=0.15]{g2alk}\\
+		\end{tabular}
+
+		\begin{block}{Parameters}
+			$I_1 = \{(k,l,p)| k,l,p \in \Z p > -l \}$
+			$I_2 = \{(k,l,p)| k,l \in \Z l \geq 1, p = -l \}$
+		\end{block}
+		\begin{block}{Eigenvalues}
+			$\lambda_{klm}^{\pm} = \pm 2 \pi \sqrt{\frac{(k + 1/2)^2}{H^2} + \frac{l^2}{L^2} + \frac{p^2}{S^2}}$
+		\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{G2(b)(d)(c)}
+		\begin{tabular}[]{lr}
+\includegraphics[scale=0.15]{g2bd} & \includegraphics[scale=0.15]{g2c}\\
+		\end{tabular}
+		\begin{block}{G2(b),G2(d)}
+			Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 0\}$
+
+			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(p+c+1/2)^2}{S^2}}$
+		\end{block}
+		\begin{block}{G2(c)}
+			Parameters: $\{(k,l,m)| k,l,m \in \Z, m \geq 0\}$
+
+			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{l^2}{L^2} + \frac{(m-1/2)^2}{S^2}}$
+		\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{G3, G6}
+		\begin{tabular}[]{lr}
+\includegraphics[scale=0.15]{g3} & \includegraphics[scale=0.15]{g6}\\
+		\end{tabular}
+		\begin{block}{G3}
+			Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 1, 0 \leq m < l\}$
+
+			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+c)^2}{H^2}\frac{l^2}{L^2} + \frac{(l - 2m)^2}{L^2}}$
+		\end{block}
+		\begin{block}{G6}
+			Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 0, k\geq 0\}$
+
+			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(m + 1/2)^2}{S^2}}$
+		\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{G4(a),(b)}
+		\begin{tabular}[]{lr}
+\includegraphics[scale=0.15]{g4a} & \includegraphics[scale=0.15]{g4b}\\
+		\end{tabular}
+		\begin{block}{G4(a)}
+			Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l \leq p < l\}$
+
+			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{l^2 + p^2}{L^2}}$
+		\end{block}
+		\begin{block}{G4(b)}
+			Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l + 1 < p \leq l\}$
+
+			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{(l-1/2)^2 + (p - 1/2)^2}{L^2}}$
+		\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{G5}
+	\begin{block}{Parameters}
+		$\{(k,l,m)| k,l,m \in \Z, l \geq 1, 0 \leq m < l\}$
+	\end{block}
+
+	\begin{block}{Eigenvalues}
+		$\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{l^2}{L^2} + \frac{(2l- m)^2}{3L^2}}$
+	\end{block}
+
+	\pause
+
+	\begin{block}{}
+		Surprisingly, the technique doesn't work for $G5$
+	\end{block}
+\end{frame}
+
 \section{$SU(3)$}
 \end{document}
