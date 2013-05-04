@@ -69,6 +69,7 @@
 \def\cZ{{\mathcal Z}}
 
 \def\Aut{{\rm Aut}}
+\def\Cas{{\rm Cas}}
 \def\Coker{{\rm Coker}}
 \def\Diff{{\rm Diff}}
 \def\dist{{\rm dist}}
@@ -184,54 +185,54 @@
 
 \subsection{Spectral Triples}
 \begin{frame}
-	\frametitle{Spectral Triples - Definition}
-	\begin{block}{Definition}
-		A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
-	\end{block}
-	\pause
+  \frametitle{Spectral Triples - Definition}
+  \begin{block}{Definition}
+    A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
+  \end{block}
+  \pause
 
-	\begin{block}{}
-		A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $D$.
+  \begin{block}{}
+    A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $D$.
 \end{block}
 \end{frame}
 
 
 \begin{frame}
-	\frametitle{Spectral Triples - Example}
-	\begin{exampleblock}{Compact spin manifold $M$}
-		\begin{itemize}
-			\item $\cA = C^{\infty}(M)$
-			\item $\cH = L^2(M, S)$, square-integrable sections of spinor bundle
-			\item $D$ Dirac operator associated with spin structure
-		\end{itemize}
-	\end{exampleblock}
+  \frametitle{Spectral Triples - Example}
+  \begin{exampleblock}{Compact spin manifold $M$}
+    \begin{itemize}
+      \item $\cA = C^{\infty}(M)$
+      \item $\cH = L^2(M, S)$, square-integrable sections of spinor bundle
+      \item $D$ Dirac operator associated with spin structure
+    \end{itemize}
+  \end{exampleblock}
 \end{frame}
 
 \subsection{Spectral Action}
 
 \begin{frame}
-	\frametitle{Spectral Action}
+  \frametitle{Spectral Action}
 
-	\begin{block}{}
-		For a spectral triple, $(\cA, \cH, D)$, the spectral action is given by
-		\[
-		\Tr f(D / \Lambda)
-		\]
-	\end{block}
+  \begin{block}{}
+    For a spectral triple, $(\cA, \cH, D)$, the spectral action is given by
+    \[
+    \Tr f(D / \Lambda)
+    \]
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{itemize}
-		\item For our purposes, $f \in \mathcal{S} (\R)$
-		\item $\Lambda > 0$
-		\item It is equivalent to calculate $f(D^2/ \Lambda ^2)$, since we may regard this simply as a different choice of the function $f$.
-	\end{itemize}
+  \begin{itemize}
+    \item For our purposes, $f \in \mathcal{S} (\R)$
+    \item $\Lambda > 0$
+    \item It is equivalent to calculate $f(D^2/ \Lambda ^2)$, since we may regard this simply as a different choice of the function $f$.
+  \end{itemize}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		The spectral action plays a central role in the Noncommutative Standard Model
-	\end{block}
+  \begin{block}{}
+    The spectral action plays a central role in the Noncommutative Standard Model
+  \end{block}
 
 \end{frame}
 
@@ -239,39 +240,39 @@
 \subsection{Noncommutative Standard Model}
 
 \begin{frame}
-	\frametitle{Noncommutative Standard Model}
+  \frametitle{Noncommutative Standard Model}
 
-	\begin{block}{}
-		A principal application of noncommutative geometry is a formulation of the standard model of physics using the mathematical framework of noncommutative geometry.
-	\end{block}
+  \begin{block}{}
+    A principal application of noncommutative geometry is a formulation of the standard model of physics using the mathematical framework of noncommutative geometry.
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		Simple input for the model: the finite-dimensional algebra $\C \oplus \H \oplus \H \oplus M_3(\C)$
-	\end{block}
+  \begin{block}{}
+    Simple input for the model: the finite-dimensional algebra $\C \oplus \H \oplus \H \oplus M_3(\C)$
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		Spacetime is modeled as the product geometry of a finite-dimensional spectral triple of the above algebra with a 4-dimensional compact Riemannian spin manifold and one may recover the usual standard model
-	\end{block}
+  \begin{block}{}
+    Spacetime is modeled as the product geometry of a finite-dimensional spectral triple of the above algebra with a 4-dimensional compact Riemannian spin manifold and one may recover the usual standard model
+  \end{block}
 
 \end{frame}
 
 
 \begin{frame}
-	\frametitle{Noncommutative Standard Model and Spectral Action}
-	\begin{block}{}
-		By computing the spectral action for ``inner fluctuations'' of the Dirac operator, one obtains the gauge bosons of the theory.
-	\end{block}
+  \frametitle{Noncommutative Standard Model and Spectral Action}
+  \begin{block}{}
+    By computing the spectral action for ``inner fluctuations'' of the Dirac operator, one obtains the gauge bosons of the theory.
+  \end{block}
 
-	\begin{block}{}
-		To give a flavour of what this involves, one must first equip the geometry with a real structure, $J$ (an antilinear unitary operator). Inner fluctuations of the Dirac operator are given by
-		\[
-		D_A = D + A + J A J^{-1},~ A = \sum a_j [D, b_j],~ a_j, b_j \in \cA,~ A = A^*
-		\]
-	\end{block}
+  \begin{block}{}
+    To give a flavour of what this involves, one must first equip the geometry with a real structure, $J$ (an antilinear unitary operator). Inner fluctuations of the Dirac operator are given by
+    \[
+    D_A = D + A + J A J^{-1},~ A = \sum a_j [D, b_j],~ a_j, b_j \in \cA,~ A = A^*
+    \]
+  \end{block}
 \end{frame}
 
 \subsection{Noncommutative Cosmology}
@@ -281,349 +282,494 @@
 \subsection{Perturbative vs Non-perturbative}
 
 \begin{frame}
-	\frametitle{Perturbative vs Non-perturbative}
-	\begin{block}{Perturbative expansion of spectral action via Gilkey's Theorem}
-		\[
-			\Tr f (D/\Lambda) \sim 2 \Lambda^4 f_4 a_0 + 2 \Lambda^2 f_2 a_2 + f_0 a_4 + \cdots + \Lambda^{-2k} f_{-2k} a_{4+2k} + \cdots
-		\]
+  \frametitle{Perturbative vs Non-perturbative}
+  \begin{block}{Perturbative expansion of spectral action via Gilkey's Theorem}
+    \[
+      \Tr f (D/\Lambda) \sim 2 \Lambda^4 f_4 a_0 + 2 \Lambda^2 f_2 a_2 + f_0 a_4 + \cdots + \Lambda^{-2k} f_{-2k} a_{4+2k} + \cdots
+    \]
 
-		\begin{align*}
-			f_k &= \int_{0}^{\infty} f(u) u^{k-1} du, ~ k>0 \\
-			&= f(0), ~ k = 0\\
-			&= (-1)^{-k/2} \frac{(-k/2)!}{-k!}f^{(-k)}(0), ~ k < 0
-		\end{align*}
-	\end{block}
+    \begin{align*}
+      f_k &= \int_{0}^{\infty} f(u) u^{k-1} du, ~ k>0 \\
+      &= f(0), ~ k = 0\\
+      &= (-1)^{-k/2} \frac{(-k/2)!}{-k!}f^{(-k)}(0), ~ k < 0
+    \end{align*}
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{alertblock}{This is only an asymptotic series}
+  \begin{alertblock}{This is only an asymptotic series}
 
-	\end{alertblock}
+  \end{alertblock}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Perturbative vs Non-perturbative}
-	\begin{block}{Nonperturbative calculation of the spectral action}
-		\[
-			\Tr f (D/\Lambda) = \sum_{n \in \Z} h(n) = \sum_{n \in \Z} \widehat{h}(n)
-		\]
-	\end{block}
+  \frametitle{Perturbative vs Non-perturbative}
+  \begin{block}{Nonperturbative calculation of the spectral action}
+    \[
+      \Tr f (D/\Lambda) = \sum_{n \in \Z} h(n) = \sum_{n \in \Z} \widehat{h}(n)
+    \]
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		Uses the Poisson summation formula
+  \begin{block}{}
+    Uses the Poisson summation formula
 
-		Returns a convergent series
-	\end{block}
+    Returns a convergent series
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{The First Example: $SU(2)$}
-	\begin{block}{Usual Expression of Dirac Spectrum}
-		$\rm{Spec}(D) = \{ \pm (\frac{3}{2} + k) | k \in \Z, k \geq 0\}$
+  \frametitle{The First Example: $SU(2)$}
+  \begin{block}{Usual Expression of Dirac Spectrum}
+    $\rm{Spec}(D) = \{ \pm (\frac{3}{2} + k) | k \in \Z, k \geq 0\}$
 
-		multiplicity of $(\frac{3}{2} + k)$ is $2 {k+2} \choose {k}$
-	\end{block}
+    multiplicity of $(\frac{3}{2} + k)$ is $2 {k+2} \choose {k}$
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{Alternative Expression}
-		$\rm{Spec}(D) = \{n + 1/2 | n \in \Z \}$
+  \begin{block}{Alternative Expression}
+    $\rm{Spec}(D) = \{n + 1/2 | n \in \Z \}$
 
-		multiplicity of $n + 1/2$ is $n(n+1)$
-	\end{block}
+    multiplicity of $n + 1/2$ is $n(n+1)$
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		Important features of alternative expression:
-		\begin{itemize}
-			\item spectrum is indexed by $\Z$
-			\item multiplicity is a polynomial, and in particular, smooth
-		\end{itemize}
-	\end{block}
+  \begin{block}{}
+    Important features of alternative expression:
+    \begin{itemize}
+      \item spectrum is indexed by $\Z$
+      \item multiplicity is a polynomial, and in particular, smooth
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{The First Example: $SU(2)$ aka $S^3$}
-	\begin{block}{}
-		Define $g(u) = (u^2 -1/4)f(u/\Lambda)$
-	\end{block}
+  \frametitle{The First Example: $SU(2)$ aka $S^3$}
+  \begin{block}{}
+    Define $g(u) = (u^2 -1/4)f(u/\Lambda)$
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		\begin{align*}
-			\widehat{g}(x) &= \int_{\R}g(u) e^{-2 \pi i x u}du = \int_{\R}(u^2 - \frac{1}{4})f(u/\Lambda)e^{-2 \pi i x u}du \\
-			&= \Lambda ^3 \int_{\R}v^2 f(v) e^{-2\pi i \Lambda x v}dv - \frac{1}{4} \Lambda \int_{\R}f(v)e^{-2\pi i \Lambda xv}dv
-		\end{align*}
-	\end{block}
+  \begin{block}{}
+    \begin{align*}
+      \widehat{g}(x) &= \int_{\R}g(u) e^{-2 \pi i x u}du = \int_{\R}(u^2 - \frac{1}{4})f(u/\Lambda)e^{-2 \pi i x u}du \\
+      &= \Lambda ^3 \int_{\R}v^2 f(v) e^{-2\pi i \Lambda x v}dv - \frac{1}{4} \Lambda \int_{\R}f(v)e^{-2\pi i \Lambda xv}dv
+    \end{align*}
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		Applying the Poisson summation formula to $g$ yields
+  \begin{block}{}
+    Applying the Poisson summation formula to $g$ yields
 
-		\[
-			Tr(f(D/\Lambda)) = \Lambda^3 \sum_{\Z}(-1)^n \widehat{f}^{(2)}(\Lambda n) - \frac{1}{4} \Lambda \sum_{\Z}(-1)^n \widehat{f}(\Lambda n)
-		\]
-	\end{block}
+    \[
+      Tr(f(D/\Lambda)) = \Lambda^3 \sum_{\Z}(-1)^n \widehat{f}^{(2)}(\Lambda n) - \frac{1}{4} \Lambda \sum_{\Z}(-1)^n \widehat{f}(\Lambda n)
+    \]
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{The First Example: $SU(2)$ aka $S^3$}
-	\begin{block}{}
-		Since we took $f \in \cS (\R)$, we have the estimates
+  \frametitle{The First Example: $SU(2)$ aka $S^3$}
+  \begin{block}{}
+    Since we took $f \in \cS (\R)$, we have the estimates
 
-		\[
-			\sum_{n \neq 0}|\widehat{f}(\Lambda n)| \leq C_k \Lambda^{-k}, ~ \sum_{n \neq 0}|\widehat{f}^{(2)}(\Lambda n)| \leq C_k \Lambda^{-k}
-		\]
-	\end{block}
+    \[
+      \sum_{n \neq 0}|\widehat{f}(\Lambda n)| \leq C_k \Lambda^{-k}, ~ \sum_{n \neq 0}|\widehat{f}^{(2)}(\Lambda n)| \leq C_k \Lambda^{-k}
+    \]
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		This gives the following theorem (Chamseddine, Connes)
+  \begin{block}{}
+    This gives the following theorem (Chamseddine, Connes)
 
-		\[
-			Tr(f(D/\Lambda)) = \Lambda^3 \int_\R v^2 f(v) dv - \frac{1}{4}\Lambda \int_{\R}f(v)dv + O(\Lambda)^{-k}
-		\]
-	\end{block}
+    \[
+      Tr(f(D/\Lambda)) = \Lambda^3 \int_\R v^2 f(v) dv - \frac{1}{4}\Lambda \int_{\R}f(v)dv + O(\Lambda)^{-k}
+    \]
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		Concrete estimates of the remainder are possible
-	\end{block}
+  \begin{block}{}
+    Concrete estimates of the remainder are possible
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\begin{block}{}
-	We want to know: Are there other situations where this technique works?
-	\end{block}
+  \begin{block}{}
+  We want to know: Are there other situations where this technique works?
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Nonexample: $S^4$}
-	\begin{block}{Spectrum}
-		$\Spec(D) = \{\pm (2 + k) | k \in \Z k \geq 0 \}$
+  \frametitle{Nonexample: $S^4$}
+  \begin{block}{Spectrum}
+    $\Spec(D) = \{\pm (2 + k) | k \in \Z k \geq 0 \}$
 
-		$\rm{multiplicity} = 4 {{k+3} \choose {k}}$
-	\end{block}
+    $\rm{multiplicity} = 4 {{k+3} \choose {k}}$
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{alertblock}{The technique doesn't work}
-		When one tries to parametrize the spectrum by $\Z$, the absolute value $|x|$ appears in the expression for the multiplicity. The resulting function is no longer smooth, and its Fourier transform no longer has the nice property of being in $\cS$
-	\end{alertblock}
+  \begin{alertblock}{The technique doesn't work}
+    When one tries to parametrize the spectrum by $\Z$, the absolute value $|x|$ appears in the expression for the multiplicity. The resulting function is no longer smooth, and its Fourier transform no longer has the nice property of being in $\cS$
+  \end{alertblock}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Spaces that we will consider}
-	\begin{itemize}
-		\item Coset spaces of $SU(2)$
-		\item Bieberbach manifolds (Quotients of flat $\mathbb{T} ^3$)
-		\item Coset spaces of $SU(2)$ with matter
-		\item $SU(3)$
-	\end{itemize}
+  \frametitle{Spaces that we will consider}
+  \begin{itemize}
+    \item Coset spaces of $SU(2)$
+    \item Bieberbach manifolds (Quotients of flat $\mathbb{T} ^3$)
+    \item Coset spaces of $SU(2)$ with matter
+    \item $SU(3)$
+  \end{itemize}
 
 \end{frame}
 
 \section{Coset spaces of $SU(2)$}
 
 \begin{frame}
-	\frametitle{Coset spaces of $SU(2)$}
-	\begin{block}{}
-		The spaces we are considering are the Riemannian homogeneous spaces $SU(2)/\Gamma$ where $\Gamma$ is a finite subgroup of $SU(2)$.
+  \frametitle{Coset spaces of $SU(2)$}
+  \begin{block}{}
+    The spaces we are considering are the Riemannian homogeneous spaces $SU(2)/\Gamma$ where $\Gamma$ is a finite subgroup of $SU(2)$.
 
-		Each of the following groups are subgroups of $SU(2)$ and are unique up to conjugacy:
-		\begin{itemize}
-			\item cyclic group of order $N$, $N = 1,2,3,\ldots$
-			\item dicyclic group of order $4N$, $N = 2,3,\ldots$
-			\item binary tetrahedral group
-			\item binary octahedral group
-			\item binary icosahedral group
-		\end{itemize}
-	\end{block}
+    Each of the following groups are subgroups of $SU(2)$ and are unique up to conjugacy:
+    \begin{itemize}
+      \item cyclic group of order $N$, $N = 1,2,3,\ldots$
+      \item dicyclic group of order $4N$, $N = 2,3,\ldots$
+      \item binary tetrahedral group
+      \item binary octahedral group
+      \item binary icosahedral group
+    \end{itemize}
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Coset spaces of $SU(2)$ - Spectrum}
-	\begin{block}{}
-		The Hilbert space of $L^2$-spinors of $G/H$ may be given the representation theoretic form
+  \frametitle{Coset spaces of $SU(2)$ - Spectrum}
+  \begin{block}{}
+    The Hilbert space of $L^2$-spinors of $G/H$ may be given the representation theoretic form
 
-		\[
-			\overline{\oplus_{\gamma \in \hat{G}} V_{\gamma} \otimes \Hom_{H}(V_{\gamma}, \Sigma_{n})}
-		\]
-	\end{block}
+    \[
+      \overline{\oplus_{\gamma \in \hat{G}} V_{\gamma} \otimes \Hom_{H}(V_{\gamma}, \Sigma_{n})}
+    \]
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		$\Sigma_{n}$ is the spinor representation space of $\Spin(n)$
-	\end{block}
+  \begin{block}{}
+    $\Sigma_{n}$ is the spinor representation space of $\Spin(n)$
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Coset spaces of $SU(2)$ - Dirac operator}
-	\begin{block}{Theorem (B\"ar)}
-		In general, there is an expression for the action of the Dirac operator on the representation-theoretic space.
-	\end{block}
+  \frametitle{Coset spaces of $SU(2)$ - Dirac operator}
+  \begin{block}{Theorem (B\"ar)}
+    In general, there is an expression for the action of the Dirac operator on the representation-theoretic space.
+  \end{block}
 
-	\begin{block}{}
-		The representation theory of $SU(2)$ is well-understood. Therefore once one has an expression of the Dirac operator in terms of the representation theory, obtaining the Dirac spectrum is simply a matter of calculation.
-	\end{block}
+  \begin{block}{}
+    The representation theory of $SU(2)$ is well-understood. Therefore once one has an expression of the Dirac operator in terms of the representation theory, obtaining the Dirac spectrum is simply a matter of calculation.
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Coset spaces of $SU(2)$ Summary of results}
-	Theorem (Teh):
-	The Dirac spectra of $SU(2) / \Gamma$ may be decomposed into several arithmetic progressions such that on each arithmetic progression the multiplicities of the Dirac operator are simple polynomials of the eigenvalues.
+  \frametitle{Coset spaces of $SU(2)$ Summary of results}
+  \begin{block}{Theorem (Teh)}
+    The Dirac spectra of $SU(2) / \Gamma$ may be decomposed into several arithmetic progressions such that on each arithmetic progression the multiplicities of the Dirac operator are simple polynomials of the eigenvalues.
+  \end{block}
 
-	As a result, by using the Poisson summation formula, one obtains a nonperturbative expression for the spectral action:
+  As a result, by using the Poisson summation formula, one obtains a nonperturbative expression for the spectral action:
 
-	\[
-	\Tr f(D/\Lambda) = \frac{1}{|\Gamma|}(\Lambda^3 \widehat{f}^{(2)}(0) -\frac{1}{4} \Lambda \widehat{f}(0)) + O(\Lambda^{-k})
-	\]
+  \[
+  \Tr f(D/\Lambda) = \frac{1}{|\Gamma|}(\Lambda^3 \widehat{f}^{(2)}(0) -\frac{1}{4} \Lambda \widehat{f}(0)) + O(\Lambda^{-k})
+  \]
 \end{frame}
 
 \begin{frame}
-	\frametitle{Lens Spaces}
-	\begin{block}{}
-		Originally, I computed the spectral action for lens spaces ($\Gamma$ is a finite cyclic group) using an expression for the lens space spectrum found in the literature. Using this result, I tried to calculate the spectral action and discovered that the Dirac spectrum did not decompose into arithmetic progressions where the multiplicities became simple polynomials.
-	\end{block}
+  \frametitle{Lens Spaces}
+  \begin{block}{}
+    Originally, I computed the spectral action for lens spaces ($\Gamma$ is a finite cyclic group) using an expression for the lens space spectrum found in the literature. Using this result, I tried to calculate the spectral action and discovered that the Dirac spectrum did not decompose into arithmetic progressions where the multiplicities became simple polynomials.
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		The break in the pattern for the spectral action led me to the discovery that the calculation of the lens space spectrum was wrong and I subsequently corrected it.
-	\end{block}
+  \begin{block}{}
+    The break in the pattern for the spectral action led me to the discovery that the calculation of the lens space spectrum was wrong and I subsequently corrected it.
+  \end{block}
 \end{frame}
 
 \section{Coset spaces of $SU(2)$ with matter}
+
 \begin{frame}
-	\frametitle{Coset spaces of $SU(2)$ with matter Summary of results}
+  \begin{block}{}
+    $M$ -- Purely gravitational physical model
+  \end{block}
+
+  \begin{block}{}
+    $M \times F$ -- Physical models with matter. The cardinality of $F$ indicates the number of fermions in the model.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Spectrum}
+  \begin{block}{Cisneros-Molina}
+    Cisneros-Molina calculated the spectrum of the Dirac operator for the spaces $SU(2)/ \Gamma \times F$ in representation theoretic terms. Using this form of the spectrum, obtaining numerical expressions for the spectrum is simply a matter of calculation.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Results}
+  \begin{block}{Theorem (Teh)}
+    The Dirac spectrum of $SU(2)/\Gamma \times F$ can be decomposed into several arithmetic progressions indexed by $\Z$ in such a way that the multiplicites of the eigenvalues form simple polynomials over each several arithmetic progression. As a result, the spectral action may be computed using the Poisson summation formula. The Poisson summation formula is given by:
+    \[
+      \Tr f(D / \Lambda) = \frac{N}{|\Gamma|}(\Lambda ^3 \widehat{f}^{(2)}(0) - \frac{1}{4}\Lambda \widehat{f}(0)) + O(\Lambda ^{-k}),
+    \]
+    where $N$ is the cardinality of the finite noncommutative space $F$.
+  \end{block}
 \end{frame}
 
 \section{Bieberbach manifolds}
+
 \begin{frame}
-	\frametitle{Summary of results}
-	Theorem (Teh):
+  \frametitle{Calculation}
+
+  \begin{block}{Strategy}
+  Use linear transformations of the parameters of the spectrum to almost cover $\Z ^3$.  By almost cover, I mean that 2-dimensional, 1-dimensional or 0-dimensional sublattices of $\Z^2$ through the origin may be covered multiple times, or not at all.
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Calculation}
-
-	\begin{block}{Strategy}
-	Use linear transformations of the parameters of the spectrum to almost cover $\Z ^3$.  By almost cover, I mean that 2-dimensional, 1-dimensional or 0-dimensional sublattices of $\Z^2$ through the origin may be covered multiple times, or not at all.
-	\end{block}
+  \frametitle{Easiest Case: Torus}
+  \begin{block}{Parameters}
+    $\{(m,n,p) \in \Z ^3 \}$
+  \end{block}
+  \begin{block}{Eigenvalues}
+    $\pm 2 \pi \sqrt{(m-a)^2 + (n-b)^2 + (p-c)^2}$
+    $a$,$b$,$c$ are constants depending on the choice of spin structure.
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Easiest Case: Torus}
-	\begin{block}{Parameters}
-		$\{(m,n,p) \in \Z ^3 \}$
-	\end{block}
-	\begin{block}{Eigenvalues}
-		$\pm 2 \pi \sqrt{(m-a)^2 + (n-b)^2 + (p-c)^2}$
-		$a$,$b$,$c$ are constants depending on the choice of spin structure.
-	\end{block}
+  \frametitle{Summary of results}
+  \begin{block}{Theorem (Teh)} All of the Bieberbach manifolds with the exception of $G5$ have Dirac spectra whose parameters almost cover $\Z ^3$. As a result the Poisson summation formula may be used to calculate the spectral action.
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{Spectral Action Calculation}
-	\begin{block}{}
-		\begin{align*}
-			\Tr f(D^2/\Lambda ^2) &= \sum_{\Z ^3} f(4 \pi ^2 ((m-a)^2 + (n-b)^2 + (p-c)^2)/\Lambda ^2) \\
-			&= \sum_{\Z^3} \widehat{f}(4 \pi ^2 ((m-a)^2 + (n-b)^2 + (p-c)^2)/\Lambda ^2) \\
-			&= \frac{\Lambda^3}{4\pi ^3} \int_{\R ^3}f(u^2 + v^2 + w^2)dudvdw + O(\Lambda^{-k})
-		\end{align*}
-	\end{block}
+  \frametitle{Spectral Action Calculation}
+  \begin{block}{}
+    \begin{align*}
+      \Tr f(D^2/\Lambda ^2) &= \sum_{\Z ^3} f(4 \pi ^2 ((m-a)^2 + (n-b)^2 + (p-c)^2)/\Lambda ^2) \\
+      &= \sum_{\Z^3} \widehat{f}(4 \pi ^2 ((m-a)^2 + (n-b)^2 + (p-c)^2)/\Lambda ^2) \\
+      &= \frac{\Lambda^3}{4\pi ^3} \int_{\R ^3}f(u^2 + v^2 + w^2)dudvdw + O(\Lambda^{-k})
+    \end{align*}
+  \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{G2(a)}
-		\begin{tabular}[]{lr}
+  \frametitle{G2(a)}
+    \begin{tabular}[]{lr}
 \includegraphics[scale=0.15]{g2alp} & \includegraphics[scale=0.15]{g2alk}\\
-		\end{tabular}
+    \end{tabular}
 
-		\begin{block}{Parameters}
-			$I_1 = \{(k,l,p)| k,l,p \in \Z p > -l \}$
-			$I_2 = \{(k,l,p)| k,l \in \Z l \geq 1, p = -l \}$
-		\end{block}
-		\begin{block}{Eigenvalues}
-			$\lambda_{klm}^{\pm} = \pm 2 \pi \sqrt{\frac{(k + 1/2)^2}{H^2} + \frac{l^2}{L^2} + \frac{p^2}{S^2}}$
-		\end{block}
+    \begin{block}{Parameters}
+      $I_1 = \{(k,l,p)| k,l,p \in \Z, p > -l \}$
+      $I_2 = \{(k,l,p)| k,l \in \Z l \geq 1, p = -l \}$
+    \end{block}
+    \begin{block}{Eigenvalues}
+      $\lambda_{klm}^{\pm} = \pm 2 \pi \sqrt{\frac{(k + 1/2)^2}{H^2} + \frac{l^2}{L^2} + \frac{p^2}{S^2}}$
+    \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{G2(b)(d)(c)}
-		\begin{tabular}[]{lr}
+  \frametitle{G2(b)(d)(c)}
+    \begin{tabular}[]{lr}
 \includegraphics[scale=0.15]{g2bd} & \includegraphics[scale=0.15]{g2c}\\
-		\end{tabular}
-		\begin{block}{G2(b),G2(d)}
-			Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 0\}$
+    \end{tabular}
+    \begin{block}{G2(b),G2(d)}
+      Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 0\}$
 
-			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(p+c+1/2)^2}{S^2}}$
-		\end{block}
-		\begin{block}{G2(c)}
-			Parameters: $\{(k,l,m)| k,l,m \in \Z, m \geq 0\}$
+      Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(p+c+1/2)^2}{S^2}}$
+    \end{block}
+    \begin{block}{G2(c)}
+      Parameters: $\{(k,l,m)| k,l,m \in \Z, m \geq 0\}$
 
-			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{l^2}{L^2} + \frac{(m-1/2)^2}{S^2}}$
-		\end{block}
+      Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{l^2}{L^2} + \frac{(m-1/2)^2}{S^2}}$
+    \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{G3, G6}
-		\begin{tabular}[]{lr}
+  \frametitle{G3, G6}
+    \begin{tabular}[]{lr}
 \includegraphics[scale=0.15]{g3} & \includegraphics[scale=0.15]{g6}\\
-		\end{tabular}
-		\begin{block}{G3}
-			Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 1, 0 \leq m < l\}$
+    \end{tabular}
+    \begin{block}{G3}
+      Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 1, 0 \leq m < l\}$
 
-			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+c)^2}{H^2}\frac{l^2}{L^2} + \frac{(l - 2m)^2}{L^2}}$
-		\end{block}
-		\begin{block}{G6}
-			Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 0, k\geq 0\}$
+      Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+c)^2}{H^2}\frac{l^2}{L^2} + \frac{(l - 2m)^2}{L^2}}$
+    \end{block}
+    \begin{block}{G6}
+      Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 0, k\geq 0\}$
 
-			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(m + 1/2)^2}{S^2}}$
-		\end{block}
+      Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(m + 1/2)^2}{S^2}}$
+    \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{G4(a),(b)}
-		\begin{tabular}[]{lr}
+  \frametitle{G4(a),(b)}
+    \begin{tabular}[]{lr}
 \includegraphics[scale=0.15]{g4a} & \includegraphics[scale=0.15]{g4b}\\
-		\end{tabular}
-		\begin{block}{G4(a)}
-			Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l \leq p < l\}$
+    \end{tabular}
+    \begin{block}{G4(a)}
+      Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l \leq p < l\}$
 
-			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{l^2 + p^2}{L^2}}$
-		\end{block}
-		\begin{block}{G4(b)}
-			Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l + 1 < p \leq l\}$
+      Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{l^2 + p^2}{L^2}}$
+    \end{block}
+    \begin{block}{G4(b)}
+      Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l + 1 < p \leq l\}$
 
-			Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{(l-1/2)^2 + (p - 1/2)^2}{L^2}}$
-		\end{block}
+      Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{(l-1/2)^2 + (p - 1/2)^2}{L^2}}$
+    \end{block}
 \end{frame}
 
 \begin{frame}
-	\frametitle{G5}
-	\begin{block}{Parameters}
-		$\{(k,l,m)| k,l,m \in \Z, l \geq 1, 0 \leq m < l\}$
-	\end{block}
+  \frametitle{G5}
+  \begin{block}{Parameters}
+    $\{(k,l,m)| k,l,m \in \Z, l \geq 1, 0 \leq m < l\}$
+  \end{block}
 
-	\begin{block}{Eigenvalues}
-		$\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{l^2}{L^2} + \frac{(2l- m)^2}{3L^2}}$
-	\end{block}
+  \begin{block}{Eigenvalues}
+    $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{l^2}{L^2} + \frac{(2l- m)^2}{3L^2}}$
+  \end{block}
 
-	\pause
+  \pause
 
-	\begin{block}{}
-		Surprisingly, the technique doesn't work for $G5$
-	\end{block}
+  \begin{block}{}
+    Surprisingly, the technique doesn't work for $G5$
+  \end{block}
 \end{frame}
 
-\section{$SU(3)$}
+\section{One-parameter family of Dirac operators on $SU(2)$ and $SU(3)$}
+
+\begin{frame}
+  \frametitle{Robertson-Walker metric on $SU(2)$}
+  \begin{block}{}
+    Chamseddine and Connes observed that one may apply the Euler-Maclaurin formula to compute the spectral action for $SU(2)$ equipped with the Robertson-Walker metric.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Euler-Maclaurin formula}
+  \begin{block}{}
+    For a smooth function $g$,
+    \begin{align*}
+      \sum_{k=a}^b g(k) &= \int_a^b g(x) dx + \frac{g(a) + g(b)}{2} +  \\
+      & \sum_{j=2}^m \frac{B_j}{j!}(g^{(j-1)}(b) - g^{(j-1)}(a)) - R_m
+    \end{align*}
+  \end{block}
+
+  \pause
+
+  \begin{block}{}
+    \begin{itemize}
+      \item Useful when Dirac spectrum is indexed by $\N$ instead of $\Z$
+      \item $B_j$ are the Bernoulli numbers
+      \item \[
+        R_m = \frac{(-1)^m}{m!} \int_a^b g^{(m)}(x) B_m (x-[x])dx
+      \]
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Bernoulli numbers}
+  Bernoulli numbers are value at 0 of Bernoulli polynomials. The Bernoulli polynomials are defined inductively as
+  \[
+    B_0(x) = 1, B_n'(x) = nB_{n-1}(x), \int_0^1 B_n(x)dx = 0
+  \]
+\end{frame}
+
+\begin{frame}
+  \frametitle{One-parameter family of Dirac operators}
+  \begin{block}{One-parameter family of connections}
+    \[
+      \nabla_X^t = \nabla_X^0 + t[X, \cdot]
+    \]
+  \end{block}
+
+  \pause
+
+  \begin{block}{}
+    \begin{itemize}
+      \item Connections are metric
+      \item Torsion equals $T(X,Y) = (2t-1)[X,Y]$
+      \item Therefore, $t = 1/2$ corresponds to Levi-Civita connection
+      \item $t = 1/3$ corresponds to cubic Dirac operator studied by Kostant
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Theorem (Lai, Teh)}
+    The one-parameter family of Dirac operators $D_t$ may be written in terms of the Casimir operator.
+    \[
+      1 \otimes \Cas + (3t-1)(\Delta \Cas - 1 \otimes \Cas - \Cas \otimes 1) + 9 t^2 |\rho|^2
+    \]
+  \end{block}
+
+  \begin{block}{}
+    The action of $\Cas$ on irreducible representations is well-understood, and so computing the Dirac spectrum becomes once again, a matter of calculation.
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Theorem(Teh)}
+    The Dirac operator on $SU(3)$ has eigenvalues $p^2 + q^2 + pq$ for $(p,q) \in \N^2$ with multiplicities given by $2p^2q^2(p+q)^2$.
+  \end{block}
+
+  \begin{block}{}
+    \begin{itemize}
+      \item The strategy of transforming parameter space to cover $\Z^2$ used for Bieberbach manifolds works here as well.
+      \item In this case the linear transformations of parameter space must preserve the multiplicities in addition to the eigenvalues.
+    \end{itemize}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Theorem(Teh)}
+    For $t = 1/3$, one may apply the Poisson summation formula to compute the spectrum for $SU(3)$, and it is given by:
+    \begin{align*}
+      & \Tr f(D_{1/3}^2)/\Lambda ^2) = \\
+                                   & \frac{1}{3}\iint_{\R ^2} x^2y^2(x+y)^2f(x^2+y^2+xy)dxdy \Lambda^8 + O(\Lambda ^{-k})
+    \end{align*}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \begin{block}{Two variable Euler-Maclaurin formula}
+    \begin{align*}
+      &\sum_{p=0}^{\infty} \sum_{q=0}^{\infty} ` g(p,q) =\\
+      &L^{2k} \frac{\partial}{\partial h_1}L^{2k} \frac{\partial}{\partial h_2} \int_{h1}^{\infty} \int_{h2}^{\infty} g(p,q)dpdq|_{h1=0, h2 = 0} + R_m(g) \\
+    \end{align*}
+
+    Apostrophe indicates weights of 1/2 along boundary edges, 1/4 at corner.
+
+    \[
+      L^{2k}(S) = 1 + \frac{1}{2!}B_2S^2+ \ldots + \frac{1}{(2k)!} B_{2k}S^{2k}
+    \]
+
+{\tiny
+    \begin{align*}
+      &R_m(g) = \\
+      & \sum_{I \subsetneq \{1,2\}}(-1)^{(m-1)(2-|I|)}\prod_{i\in I} L^{2k} \frac{\partial}{\partial h_i} \int_{h1}^{\infty}\int_{h1}^{\infty} \prod_{i \notin I} P_m(x_i) \frac{\partial}{\partial x_i} ^m g(x_1,x_2)dx_1 dx_2 |_{h=0}
+    \end{align*}
+    }
+  \end{block}
+\end{frame}
 \end{document}
+
