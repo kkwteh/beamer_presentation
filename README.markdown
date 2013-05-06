@@ -1,90 +1,61 @@
 This repo contains the beamer presentation for Kevin Teh's PhD defense to take
 place on May 17, 2013.
 
-Overview:
+Correct order of figures:
+g2alp
+g2alk
+g2bd
+g2c
+g3
+g4a
+g4b
+g6
 
-Spectral Standard Model
+Notes:
+  -Neutrino mixing means transistion of one flavor of neutrino into another,
+  a phenomenon not contained in the original standard model
 
-The finite geometry
-  The left-right symmetric algebra
-  The bimodule MF
-  Real spectral Triples
-  The subalgebra and the order one condition
-  Unimodularity and hypercharges
-  The classification of Dirac operators
-  The moduli space of Dirac operators and the Yukawa parameters
-  Dimension, KO-theory, and Poincare duality
+  -CKM matrix is a unitary matrix containining information on strength of
+  flavor-changing transitions of quarks.
 
-The spectral action and the standard model
-  Riemannian geometry and spectral triples
-  The product geometry
-  The real part of the product geometry
-  The adjoint representation and the gauge symmetries
-  Inner fluctuations and boons
-  The Dirac operator and its square
-  The spectral action and the asymptotic expansion
+  -PMNS matrix is a unitary matrix with information about strength of various
+  interactinos involving leptons.
 
-The Lagrangian
-  Notation for the standard model
-  The asymptotic formula for the spectral action
-  The mass relation
-  The coupling of fermions
-  The self interaction of the gauge bosons
-  The minimal coupling of the Higgs field
-  The Higgs field self-interaction
+  -Majorana mass matrix contains information about the mass of neutrinos
 
-Standard Model Objects
-  gauge Theory
-  coupling constant
-  field strength tensor
-  quarks
+Outline of talk.
 
-Recipe to construct a gauge theory
-  -Choose the gauge group G with NG generators
-  -Add NG vector fields (gauge bosons) in a specific representation of the
-  gauge group
-  -Choose the representation for the matter fields (elementary particles)
-  -Add scalar fields to give mass to of the vector bosons
-  -Define the covariant derivative and write the most general renormalizable
-  Lagrangian, invariant under G, which couples all these fields
-  -Shift the scalar fields in such a way that the minimum of the potential is
-  at zero
-  -Apply the usual techniques of quantum field theory to verify the
-  renormalizability and to make predictions
-  -Check with Nature
+Section: Intro to NCG and the spectral action.
 
-Three generations of matter (fermions) sixteen per family?
-  up, down, electron neutrino, electron
-  charm, strange, muon neutrino, muon
-  top, bottom, tau neutrino, tau
+-Noncommutative geometry is a generalization of Riemannian geometry whose
+central object is the spectral triple (A,H,D).
 
-Bosons
-  photon, gluon, Z0 boson, W+/- boson, Higgs
-  W+/- bosons associated with SU(2)
+-Definition of Spectral Triple
 
-Electroweak sector has gauge group U(1)xSU(2)L
-  -subscript L indicates that group
+-Definition of Real Structure
 
-Gauge bosons
-  gauge bosons are generators of gauge group
-  photon (generator of U(1))
-  gluon (generator of SU(3))
-  Z0 boson
-  W+/- boson (generator of SU(2))
+-Example Riemannian manifold
 
-Quarks
-  up, down, charm, strange, top, bottom
-  anti-particles
-  colors: red, green, blue
+-One of the most import aspects of noncommutative geometry is that one can
+construct a unified theory of the standard model with neutrino mixing, minimally
+coupled to gravity
 
-Leptons
-  electron, electron neutrino, muon, muon neutrino, tau, tau neutrino
-  anti-particles
+-The input required to construct the model is simple, the finite noncommutative
+algebra C+H+H+M3C
 
-Family (16 per family)
-  12 quarks: 2 base x 2 anti-particles x 3 colors
-  4 leptons: 2 base x 2 anti-particles
+-One classifies all possible Dirac operators that give a real spectral triple
+(A,H,D). The resulting Dirac operators depend on 31 real parameters,
+corresponding to the masses for leptons and quarks, angles of CKM and PMNS
+matrices and Majorana mass matrix.
 
-Composite particles
-  Mesons
-  Pions
+-Bosons of standard model, including Higgs are obtained by inner fluctuations of
+Dirac operator of geometry.
+
+-From the geometry, one obtains the physics model by applying the spectral
+action Tr(f(D/Lambda))
+
+-The spectral action applied to inner fluctuations only gives bosons.
+
+Cosmology
+The spectral action, in its non-perturbative form provides a slow-roll potential
+whose form and underlying parameters are sensitive to the cosmic topology.
