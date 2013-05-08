@@ -257,20 +257,52 @@
 \end{frame}
 
 \begin{frame}
+	\frametitle{Aside on Poisson Summation Formula}
+	\begin{block}{Poisson Summation Formula}
+		\[
+			\sum_{n \in \Z} h(n) = \sum_{n\in \Z} \widehat{h}(n),
+		\]
+		$\widehat{h}(x) = \int_{\R} h(u) e^{2\pi i u x} du$
+	\end{block}
+	
+	\pause
+	
+	\begin{block}{Slightly more general form}
+		\[
+		\sum_{n \in \Z} h(x + \lambda n) = \frac{1}{\lambda} \sum_{n \in \Z} e^{\frac{2\pi i n x}{\lambda}}\widehat{h}(\frac{n}{\lambda})
+		\]
+	\end{block}
+	
+	
+\end{frame}
+
+\begin{frame}
   \frametitle{Perturbative vs Non-perturbative}
   \begin{block}{Nonperturbative calculation of the spectral action}
     \[
-      \Tr f (D/\Lambda) = \sum_{n \in \Z} h(n) = \sum_{n \in \Z} \widehat{h}(n)
+      \Tr f (D/\Lambda) = \sum_{n \in \Z} h(x + \lambda n) = \frac{1}{\lambda} \sum_{n \in \Z} e^{\frac{2\pi i n x}{\lambda}}\widehat{h}(\frac{n}{\lambda})
     \]
   \end{block}
 
   \pause
 
   \begin{block}{}
-    Uses the Poisson summation formula
-
-    Returns a convergent series
+	In this form, the spectral action provides a slow-roll inflation potential.
   \end{block}
+\end{frame}
+
+\subsection{Slow-roll Potential}
+\begin{frame}
+	\begin{block}{}
+		Substitute $D^2 \mapsto D^2 + \phi^2$. On $S^3 \times S^1$ this leads to a shift in the spectral action of
+		\[
+		-\pi \Lambda ^2 \beta a^3 \int_0^{\infty} h(v)dv \phi ^2 + \frac{1}{2} \pi \beta a h(0) \phi^2 + \frac{1}{2} \pi \beta a^3 h(0) \phi^4.
+		\]
+	\end{block}
+	
+	\begin{block}{}
+		This quantity is physically interpreted as a slow-roll inflation potential.  The form of the potential and its corresponding slow-roll parameters are sensitive to the cosmic geometry.
+	\end{block}
 \end{frame}
 
 \begin{frame}
@@ -378,14 +410,35 @@
   \frametitle{Spaces that we will consider}
   \begin{itemize}
     \item Coset spaces of $SU(2)$
+    \item Coset spaces of $SU(2) \times F$
     \item Bieberbach manifolds (Quotients of flat $\mathbb{T} ^3$)
-    \item Coset spaces of $SU(2)$ with matter
     \item $SU(3)$
   \end{itemize}
 
 \end{frame}
 
 \section{Coset spaces of $SU(2)$}
+
+\begin{frame}
+	\frametitle{$SU(2)/Q8$}
+	\begin{block}{Theorem(Ginoux)}
+	$SU(2)/Q8$ has four spin structures. For one spin structure, the Dirac operator has spectrum 
+	\[
+	\left\{ \begin{array}{lll}
+\frac{3}{2} + 4k & \text{with multiplicity} & 2(k+1)(2k+1) \\[2mm]
+\frac{3}{2} + 4k +2 & \text{with multiplicity} & 4k(k+1),
+\end{array}\right.
+	\]
+	
+	For the other three spin structures, the spectrum is
+	\[
+\left\{ \begin{array}{lll}
+\frac{3}{2} + 4k & \text{with multiplicity} & 2k(2k+1) \\[2mm]
+\frac{3}{2} + 4k +2 & \text{with multiplicity} & 4(k+1)^2.
+\end{array}\right.
+	\]
+	\end{block}
+\end{frame}
 
 \begin{frame}
   \frametitle{Coset spaces of $SU(2)$}
