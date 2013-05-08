@@ -12,3 +12,5 @@
 *.un~
 *.swp
 g*.pdf
+*.fdb_latexmk
+*.fls
