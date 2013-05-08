@@ -422,7 +422,7 @@
 \begin{frame}
 	\frametitle{$SU(2)/Q8$}
 	\begin{block}{Theorem(Ginoux)}
-	$SU(2)/Q8$ has four spin structures. For one spin structure, the Dirac operator has spectrum 
+	$SU(2)/Q8$ has four spin structures. For one spin structure, the Dirac operator has spectrum (with parameter $k \in \Z$)
 	\[
 	\left\{ \begin{array}{lll}
 \frac{3}{2} + 4k & \text{with multiplicity} & 2(k+1)(2k+1) \\[2mm]
@@ -437,6 +437,40 @@
 \frac{3}{2} + 4k +2 & \text{with multiplicity} & 4(k+1)^2.
 \end{array}\right.
 	\]
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{$SU(2)/Q8$}
+	\begin{block}{Theorem(Teh)}
+		One may find polynomials which return the multiplicities when evaluated at the eigenvalues. For the first spectrum the polynomials are
+		
+		\[
+P_1(u) =\frac{1}{4} u^2 + \frac{3}{4} u + \frac{5}{16}, \quad P_2(u) =  \frac{1}{4} u^2 - \frac{3}{4} u - \frac{7}{16}
+		\]
+		
+		For the second spectrum they are
+		
+		\[
+P_1(u)  = \frac{1}{4} u^2 - \frac{1}{4} u - \frac{3}{16}, \quad P_2(u)  = \frac{1}{4} u^2 + \frac{1}{4} u + \frac{1}{16}
+		\]
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{$SU(2)/Q8$}
+	\begin{block}{Theorem (Teh)}
+		Define $g_i(u) = P_i(u)f(u/\Lambda)$. Applying the Poisson summation formula to $g_1, g_2$ results in the expression of the spectral action
+		
+		\[
+		\Tr f(D/\Lambda) = \frac{1}{8}\Lambda^3 \widehat{f}^{(2)}(0) - \frac{1}{32}\Lambda \widehat{f}(0) + O(\Lambda^{-k})
+		\]
+	\end{block}
+	
+	\pause
+	
+	\begin{block}{}
+		The same result holds for all four spin structures. In all cases where I have computed the spectral action for multiple spin structures (see Bieberbach manifolds), the expression for the spectral action is independent of the spin structure, even though the Dirac spectrum in general depends on the choice of spin structure.
 	\end{block}
 \end{frame}
 
