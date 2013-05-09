@@ -606,6 +606,53 @@ F_-(z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma} \frac{\chi^+(\epsilon(\g
 
 \begin{frame}
 	\frametitle{Generating functions for Poincar\'e Homology Sphere}
+	\begin{block}{$F_+$}
+	\[
+F_+(z) = -\frac{16(710647 + 317811 \sqrt{5})G^+(z)}{(7 + 3 \sqrt{5})^3 (2207 + 987 \sqrt{5})H^+(z)},
+\]
+{\small
+$$ \begin{array}{rl}
+G^+(z) =&  6z^{11} + 18z^{13} + 24z^{15} + 12z^{17} - 2z^{19} \\[2mm]
+- & 6z^{21} - 2z^{23} + 2 z^{25} + 4z^{27} + 3z^{29} + z^{31},
+\end{array} $$
+$$ \begin{array}{rl}
+H^+(z) = & -1 -3 z^{2}  -4z^{4}-2z^{6}+2z^{8}+ 6z^{10} + 9z^{12} + 9z^{14} + 4 z^{16}\\[2mm]
+- &  4 z^{18} - 9 z^{20} -9z^{22}-6z^{24}-2z^{26} + 2z^{28} + 4z^{30} + 3z^{32} + z^{34},
+\end{array}
+$$}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Generating functions for Poincar\'e Homology Sphere}
+	\begin{block}{$F_-$}
+\[
+F_-(z) = -\frac{1024(5374978561 + 2403763488  \sqrt{5})G^-(z)}{(7 + 3 \sqrt{5})^8 (2207 + 987 \sqrt{5})H^-(z)},
+\]
+{\small
+$$ \begin{array}{rl}
+G^-(z) = & 1 + 3z^{2} + 4z^{4} + 2z^{6} - 2z^{8}-6z^{10} \\[2mm]
+- & 2z^{12} + 12 z^{14} + 24z^{16} + 18z^{18} + 6z^{20},
+\end{array}
+$$
+$$ \begin{array}{rl}
+H^-(z) = & -1 -3 z^{2}  -4z^{4}-2z^{6}+2z^{8}+ 6z^{10} + 9z^{12} + 9z^{14} + 4 z^{16}
+\\[2mm] - & 4 z^{18}  - 9 z^{20} - 9z^{22}-6z^{24}-2z^{26} + 2z^{28} + 4z^{30} + 3z^{32} + z^{34}. \end{array} $$}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Poincar\'e Homology Sphere - Spectral Action}
+\begin{block}{Theorem(Teh)}
+The spectrum of the Poincar\'e homology sphere may be decomposed into 60 arithmetic progressions such that the multiplicities of the eigenvalues are quadratic polynomials. The sum of these polynomials is
+\[
+\sum_{j=0}^{59} P_j(u) =  \frac{1}{2}u^2-\frac{1}{8}. 
+\]
+Therefore, when we apply the Poisson summation formula, the spectral action becomes
+\[
+\Tr(f(D/\Lambda)) = \frac{1}{60} \left(  \frac{1}{2}\Lambda^3 \widehat f^{(2)}(0) -\frac{1}{8}\Lambda \widehat f(0)  \right),
+\]
+\end{block}
 \end{frame}
 
 \begin{frame}
@@ -754,7 +801,7 @@ F_-(z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma} \frac{\chi^+(\epsilon(\g
 
     \begin{block}{Parameters}
       $I_1 = \{(k,l,p)| k,l,p \in \Z, p > -l \}$
-      $I_2 = \{(k,l,p)| k,l \in \Z l \geq 1, p = -l \}$
+      $I_2 = \{(k,l,p)| k,l \in \Z, l \geq 1, p = -l \}$
     \end{block}
     \begin{block}{Eigenvalues}
       $\lambda_{klm}^{\pm} = \pm 2 \pi \sqrt{\frac{(k + 1/2)^2}{H^2} + \frac{l^2}{L^2} + \frac{p^2}{S^2}}$
