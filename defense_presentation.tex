@@ -807,6 +807,9 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
     \begin{block}{Eigenvalues}
       $\lambda_{klm}^{\pm} = \pm 2 \pi \sqrt{\frac{(k + 1/2)^2}{H^2} + \frac{l^2}{L^2} + \frac{p^2}{S^2}}$
     \end{block}
+    \begin{block}{Transformations}
+    $(l,p) \mapsto (p,l)$, $l \mapsto -l$
+    \end{block}
 \end{frame}
 
 \begin{frame}
@@ -814,10 +817,12 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
     \begin{tabular}[]{l}
 \includegraphics[scale=0.15]{g2bd}\\
     \end{tabular}
-    \begin{block}{G2(b),G2(d)}
+    \begin{block}{}
       Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 0\}$
 
       Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(p+c+1/2)^2}{S^2}}$
+      
+      Transformations: $l \mapsto -l - 1$
     \end{block}
 
 \end{frame}
@@ -828,10 +833,12 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
 \includegraphics[scale=0.15]{g2c}\\
     \end{tabular}
 
-    \begin{block}{G2(c)}
+    \begin{block}{}
       Parameters: $\{(k,l,m)| k,l,m \in \Z, m \geq 0\}$
 
       Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{l^2}{L^2} + \frac{(m-1/2)^2}{S^2}}$
+      
+      Transformations: $l \mapsto -l, p \mapsto 1-p$
     \end{block}
 \end{frame}
 
@@ -840,10 +847,12 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
     \begin{tabular}[]{l}
 \includegraphics[scale=0.15]{g3}\\
     \end{tabular}
-    \begin{block}{G3}
+    \begin{block}{}
       Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 1, 0 \leq m < l\}$
 
       Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+c)^2}{H^2}\frac{l^2}{L^2} + \frac{(l - 2m)^2}{L^2}}$
+      
+      Transformations: $(l,m) \mapsto (-l,-m), (l,m) \mapsto (m,l), (l,m) \mapsto(l-m,-m)$
     \end{block}
 \end{frame}
 
@@ -852,10 +861,12 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
     \begin{tabular}[]{lr}
 	\includegraphics[scale=0.15]{g4a}\\
     \end{tabular}
-    \begin{block}{G4(a)}
+    \begin{block}{}
       Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l \leq p < l\}$
 
       Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{l^2 + p^2}{L^2}}$
+      
+      Transformations: $l \mapsto -l, (l,p) \mapsto (p,l), (l,p)\mapsto(p,-l)$
     \end{block}
 \end{frame}
 
@@ -865,10 +876,12 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
 	\includegraphics[scale=0.15]{g4b}\\
     \end{tabular}
 
-    \begin{block}{G4(b)}
+    \begin{block}{}
       Parameters: $\{(k,l,p)| k,l,p \in \Z, l \geq 1, -l + 1 < p \leq l\}$
 
       Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2} + \frac{(l-1/2)^2 + (p - 1/2)^2}{L^2}}$
+      
+      Transformations: $l \mapsto -l, (l,p) \mapsto (p,l)$
     \end{block}
 
 \end{frame}
@@ -882,6 +895,8 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
       Parameters: $\{(k,l,m)| k,l,m \in \Z, l \geq 0, k\geq 0\}$
 
       Eigenvalues: $\pm 2\pi\sqrt{\frac{(k+1/2)^2}{H^2}\frac{(l+1/2)^2}{L^2} + \frac{(m + 1/2)^2}{S^2}}$
+      
+      Transformations: $k\mapsto -k - 1, l \mapsto -l -1$
     \end{block}
 \end{frame}
 
@@ -900,6 +915,18 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
   \begin{block}{}
     Surprisingly, the technique doesn't work for $G5$
   \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Bieberbach manifolds}
+\begin{block}{Spectral Action}
+\begin{align*}
+&\rm{G2(a,b,c,d)} \quad HSL(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
+&\rm{G3} \quad HL^2 \frac{1}{\sqrt{3}}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
+&\rm{G4(a,b)} \quad HL^2 \frac{1}{2}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
+&\rm{G6} \quad HLS \frac{1}{2}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + t^2)dudvdt + O(\Lambda^{-\infty})\\
+\end{align*}
+\end{block}
 \end{frame}
 
 \section{One-parameter family of Dirac operators on $SU(2)$ and $SU(3)$}
