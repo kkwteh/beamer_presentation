@@ -791,6 +791,64 @@ e^{\frac{2 \pi i}{N}} & 0 \\
 \end{frame}
 
 \begin{frame}
+For a linear transformation $f \in \Hom_{\C}(V_n, \Sigma_3)$, let
+\[
+\left(
+\begin{array}{c}
+f_{1k} \\
+f_{2k}
+\end{array}
+\right)
+:= f(P_k).
+\]
+Then $f$ commutes with $B$ translates to
+\[
+\left(
+\begin{array}{c}
+f_{1k} \\
+f_{2k}
+\end{array}
+\right)
+=
+\left(
+\begin{array}{c}
+e^{2\pi i \frac{2k-n+1}{N}}f_{1k} \\
+e^{2\pi i \frac{2k-n-1}{N}}f_{2k}
+\end{array}
+\right).
+\]
+\end{frame}
+
+\begin{frame}
+It follows that $\Hom _{\mathbb{Z}_N} (V_{n}, \Sigma_3)$  has the following basis:
+\begin{align*}
+& \{A_k : k = \frac{mN+n-1}{2} \in \{ 0,1,\ldots, n\}, m\in \Z,k \rm{~even} \} \\
+& \cup \{B_k : k = \frac{mN+n-1}{2} \in \{ 0,1,\ldots, n\}, m\in \Z, k \rm{~odd} \} \\
+& \cup \{A_k : k = \frac{mN+n+1}{2} \in \{ 0,1,\ldots, n\}, m\in \Z, k \rm{~odd} \} \\
+& \cup \{B_k : k = \frac{mN+n+1}{2} \in \{ 0,1,\ldots, n\}, m\in \Z, k \rm{~even} \}. \\
+\end{align*}
+\end{frame}
+
+\begin{frame}
+One now determines the action of $D_n'$ on this basis using the formulas above. With respect to this basis, $D_n'$ is block diagonal with blocks of size size 1 or 2. The eigenvalues of these blocks may be computed directly, and as a result we obtain the spectrum.
+
+\begin{block}{Theorem (Teh)}
+	The Dirac spectrum of lens space equipped with the Berger metric $T>0$ is
+	
+	\begin{tabular}{|c|c|}
+\hline
+$\lambda$ & multiplicity\\
+\hline
+$\{ -\frac{T}{2} \pm  \sqrt{(1+n)^2 + m^2 N^2\left(\frac{1}{T^2} - 1 \right)} |$    & \\
+$n \in 2\N +1, m\in \Z, -n \leq mN-1 < n \}$ & $n+1$\\
+\hline
+$\{ -\frac{T}{2} -\frac{mN}{T} | m \in \N \}$ & $2mN$ \\
+\hline
+\end{tabular}
+\end{block} 
+\end{frame}
+
+\begin{frame}
   \frametitle{Coset spaces of $SU(2)$ Summary of results}
   \begin{block}{Theorem (Teh)}
     The Dirac spectra of $SU(2) / \Gamma$ may be decomposed into several arithmetic progressions such that on each arithmetic progression the multiplicities of the Dirac operator are simple polynomials of the eigenvalues.
@@ -801,6 +859,10 @@ e^{\frac{2 \pi i}{N}} & 0 \\
   \[
   \Tr f(D/\Lambda) = \frac{1}{|\Gamma|}(\Lambda^3 \widehat{f}^{(2)}(0) -\frac{1}{4} \Lambda \widehat{f}(0)) + O(\Lambda^{-k})
   \]
+\end{frame}
+
+\begin{frame}
+	\frametitle{Calculations of Dirac spectrum and patterns in the spectral action}
 \end{frame}
 
 \section{Coset spaces of $SU(2)$ with matter}
