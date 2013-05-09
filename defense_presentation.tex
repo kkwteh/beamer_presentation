@@ -673,20 +673,91 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
 
 \begin{frame}
   \frametitle{Coset spaces of $SU(2)$ - Spectrum}
-  \begin{block}{}
+  \begin{block}{Theorem(B\"ar)}
     The Hilbert space of $L^2$-spinors of $G/H$ may be given the representation theoretic form
 
     \[
       \overline{\oplus_{\gamma \in \hat{G}} V_{\gamma} \otimes \Hom_{H}(V_{\gamma}, \Sigma_{n})}
     \]
-  \end{block}
-
-  \pause
-
-  \begin{block}{}
-    $\Sigma_{n}$ is the spinor representation space of $\Spin(n)$
+    
+    The Dirac operator acts on each summand as $\id \otimes D_{\gamma}$, where
+    \[
+    D_{\gamma}(A) := - \sum_{k=1}^n e_k \cdot A \circ (\pi_{\gamma})_* (X_k)
++ \left( \sum_{i=1}^n \beta_i e_i + \sum_{i<j<k}\alpha_{ijk}e_i \cdot e_j \cdot e_k \right) \cdot A.
+    \]
   \end{block}
 \end{frame}
+
+\begin{frame}
+  \begin{block}{Theorem(B\"ar)}
+  When $G = SU(2)$, $H$ is a finite subgroup of $SU(2)$, and $G/H$ is equipped with the Berger metric corresponding to the parameter $T>0$, this becomes
+  \[
+D_n A = - \sum _k e_k \cdot A \cdot (\pi_n)_*(X_k) - \left( \frac{T}{2} + \frac{1}{T} \right).
+\]
+  \end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Representation theory of $SU(2)$}
+  \begin{block}{Irreducible representations}
+	$V_n$, space of homogenous complex polynomials of degree $n$ in two variables $z_1$, $z_2$.
+	
+	Basis: $P_k(z_1,z_2) = z_1^{n-k}z_2^k$
+  \end{block}
+  
+  \begin{block}{Action of $SU(2)$}
+  	For $A \in SU(2)$,
+	\[
+	(AP)(z) = P(A\cdot z) 
+	\]
+  \end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Spinor space $\Sigma_3$}
+	\begin{block}{$\Sigma_3 \simeq \C ^2$}
+	\end{block}
+	\begin{block}{Action of $SU(2)$ on $\Sigma_3$}
+		Matrix multiplication
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\begin{block}{Basis of $\Hom_{\C}(V_n, \Sigma_3)$}
+	For $k = 0,1,\ldots n$,
+	\begin{align*}
+A_k(P_l) & = \begin{cases}
+\left( \begin{array}{c}
+1\\
+0
+\end{array} \right),
+ & \mbox{if } k=l,~k\mbox{ is even} \\
+\left( \begin{array}{c}
+0\\
+1
+\end{array} \right),
+& \mbox{if } k=l,~k\mbox{ is odd}\\
+\quad 0,
+& \mbox{otherwise}
+ \end{cases} \\
+B_k(P_l) & = \begin{cases}
+\left( \begin{array}{c}
+0\\
+1
+\end{array} \right),
+ & \mbox{if } k=l,~k\mbox{ is even} \\
+\left( \begin{array}{c}
+1\\
+0
+\end{array} \right),
+& \mbox{if } k=l,~k\mbox{ is odd}\\
+\quad 0,
+& \mbox{otherwise}
+ \end{cases}
+\end{align*}
+	\end{block}
+\end{frame}
+
 
 \begin{frame}
   \frametitle{Coset spaces of $SU(2)$ - Dirac operator}
