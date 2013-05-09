@@ -522,7 +522,90 @@ d & -c & b & a \\
 
 \begin{frame}
 	\frametitle{The double cover $\Spin(4) \rightarrow SO(4)$}
+	\begin{block}{$\Spin(4) \simeq S^3_L \times S^3_R$}
+	\end{block}
+	\begin{block}{$S^3_L, S^3_R$}
+$\left(
+\begin{array}{cccc}
+a & -b & -c & -d \\
+b & a & -d & c \\
+c & d & a & -b \\
+d & -c & b & a \\
+\end{array}
+\right)$, $\left(
+\begin{array}{cccc}
+p & -q & -r & -s \\
+q & p & s & -r \\
+r & -s & p & q \\
+s & r & -q & p
+\end{array}
+\right)$	
+	\end{block}
+	\begin{block}{Double cover}
+	$(A,B) \mapsto AB$
+	\end{block}
+\end{frame}
 
+\begin{frame}
+\frametitle{Half-spin representations}
+\begin{block}{$\rho^+$}
+\[
+\left(
+\begin{array}{cccc}
+a & -b & -c & -d \\
+b & a & -d & c \\
+c & d & a & -b \\
+d & -c & b & a \\
+\end{array}
+\right)
+\mapsto
+\left(
+\begin{array}{cc}
+a -bi & d + ci \\
+-d + ci & a + bi
+\end{array}
+\right)
+\]
+\end{block}
+
+\begin{block}{$\rho^-$}
+\[
+\left(
+\begin{array}{cccc}
+p & -q & -r & -s \\
+q & p & s & -r \\
+r & -s & p & q \\
+s & r & -q & p
+\end{array}
+\right)^{t}
+\mapsto
+\left(
+\begin{array}{cc}
+p - qi & s + ri \\
+-s + ri & p + qi
+\end{array}
+\right)
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Evaluating the generating function}
+	\begin{block}{Formula for the generating functions}
+		\begin{align*}
+F_+ (z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma}  \frac{\chi^-(\epsilon(\gamma)) - z \cdot \chi^+ (\epsilon(\gamma))}{\det(1_{2m} - z \cdot \gamma)}, \\ \label{Spmultgen2}
+F_-(z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma} \frac{\chi^+(\epsilon(\gamma)) - z \cdot \chi^- (\epsilon(\gamma))}{\det(1_{2m} - z \cdot \gamma)}.
+		\end{align*}
+
+		\begin{align*}
+			\chi^- (\epsilon(\gamma)) &= 2a \\
+			\chi^+ (\epsilon(\gamma)) &= 2.
+		\end{align*}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Generating functions for Poincar\'e Homology Sphere}
 \end{frame}
 
 \begin{frame}
