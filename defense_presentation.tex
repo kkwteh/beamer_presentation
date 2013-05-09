@@ -475,6 +475,57 @@ P_1(u)  = \frac{1}{4} u^2 - \frac{1}{4} u - \frac{3}{16}, \quad P_2(u)  = \frac{
 \end{frame}
 
 \begin{frame}
+	\frametitle{Poincar\'e Homology Sphere}
+	\begin{block}{Generating functions}
+	\begin{align*}
+F_+(z) & = \sum_{k=0}^{\infty} m (\frac{n}{2}+k,D)z^k  \\
+F_-(z) &= \sum_{k=0}^{\infty} m (-(\frac{n}{2}+k),D)z^k .
+\end{align*}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\begin{block}{Formula for the generating functions}
+		\begin{align*}
+F_+ (z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma}  \frac{\chi^-(\epsilon(\gamma)) - z \cdot \chi^+ (\epsilon(\gamma))}{\det(1_{2m} - z \cdot \gamma)}, \\ \label{Spmultgen2}
+F_-(z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma} \frac{\chi^+(\epsilon(\gamma)) - z \cdot \chi^- (\epsilon(\gamma))}{\det(1_{2m} - z \cdot \gamma)}.
+		\end{align*}
+	\end{block}
+	
+	\begin{block}{}
+	\begin{itemize}
+		\item $\Gamma$ -- subgroup of $SO(n)$
+		\item $\chi^{\pm}$ -- characters of half spin representations of $\Spin(4)$
+		\item $\epsilon$ -- group homomorphism $SO(n) \rightarrow \Spin(4)$ depending on choice of spin structure
+	\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Identifying unit quaternions with elements of  $SO(4)$}
+	\begin{block}{Unit Quaternion}
+	$a + bi + cj + dk$, $a^2 + b^2 + c^2 + d^2 = 1$
+	\end{block}
+	\begin{block}{Element of $SO(4)$}
+	\[
+\left(
+\begin{array}{cccc}
+a & -b & -c & -d \\
+b & a & -d & c \\
+c & d & a & -b \\
+d & -c & b & a \\
+\end{array}
+\right).
+\]
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{The double cover $\Spin(4) \rightarrow SO(4)$}
+
+\end{frame}
+
+\begin{frame}
   \frametitle{Coset spaces of $SU(2)$}
   \begin{block}{}
     The spaces we are considering are the Riemannian homogeneous spaces $SU(2)/\Gamma$ where $\Gamma$ is a finite subgroup of $SU(2)$.
