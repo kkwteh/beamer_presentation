@@ -831,9 +831,11 @@ It follows that $\Hom _{\mathbb{Z}_N} (V_{n}, \Sigma_3)$  has the following basi
 
 \begin{frame}
 One now determines the action of $D_n'$ on this basis using the formulas above. With respect to this basis, $D_n'$ is block diagonal with blocks of size size 1 or 2. The eigenvalues of these blocks may be computed directly, and as a result we obtain the spectrum.
+\end{frame}
 
+\begin{frame}
 \begin{block}{Theorem (Teh)}
-	The Dirac spectrum of lens space equipped with the Berger metric $T>0$ is
+	The Dirac spectrum of lens space equipped with the Berger metric $T>0$ for $N$ even is
 	
 	\begin{tabular}{|c|c|}
 \hline
@@ -845,13 +847,24 @@ $n \in 2\N +1, m\in \Z, -n \leq mN-1 < n \}$ & $n+1$\\
 $\{ -\frac{T}{2} -\frac{mN}{T} | m \in \N \}$ & $2mN$ \\
 \hline
 \end{tabular}
+
+For $N$ odd it is
+\begin{tabular}{|c|c|}
+\hline
+$\lambda$ & multiplicity\\
+\hline
+$\{ -\frac{T}{2} \pm  \sqrt{(1+n)^2 + m^2 N^2\left(\frac{1}{T^2} - 1 \right)}|$ & \\ $(n \in 2 \N +1, m \in 2\Z)$ \rm{or}  & \\$(n \in 2\N, $m$ \in 2\Z + 1)$, $-n \leq mN-1 < n \}$  &$ n+1$\\
+\hline
+$\{ -\frac{T}{2} -\frac{mN}{T}| m \in \N$ \}  & $2mN$ \\
+\hline
+\end{tabular}
 \end{block} 
 \end{frame}
 
 \begin{frame}
   \frametitle{Coset spaces of $SU(2)$ Summary of results}
   \begin{block}{Theorem (Teh)}
-    The Dirac spectra of $SU(2) / \Gamma$ may be decomposed into several arithmetic progressions such that on each arithmetic progression the multiplicities of the Dirac operator are simple polynomials of the eigenvalues.
+    For each subgroup $\Gamma$, the Dirac spectra of $SU(2) / \Gamma$ may be decomposed into several arithmetic progressions such that on each arithmetic progression the multiplicities of the Dirac operator are simple polynomials of the eigenvalues.
   \end{block}
 
   As a result, by using the Poisson summation formula, one obtains a nonperturbative expression for the spectral action:
@@ -878,10 +891,48 @@ $\{ -\frac{T}{2} -\frac{mN}{T} | m \in \N \}$ & $2mN$ \\
 \end{frame}
 
 \begin{frame}
-  \frametitle{Spectrum}
-  \begin{block}{Cisneros-Molina}
-    Cisneros-Molina calculated the spectrum of the Dirac operator for the spaces $SU(2)/ \Gamma \times F$ in representation theoretic terms. Using this form of the spectrum, obtaining numerical expressions for the spectrum is simply a matter of calculation.
+\frametitle{Definitions}
+\begin{block}{Exponent $c_{\Gamma}$}
+$c_{\Gamma}$ is the exponent of the group $\Gamma$, the least common multiple of the orders of the elements in $\Gamma$
+\end{block}
+\begin{block}{$E_k$}
+$E_k$ is the dimension $k+1$ irreducible representation of $SU(2)$ of homogenous complex polynomials in two variables of order $k$
+\end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{$SU(2)/\Gamma \times F$}
+  \begin{block}{Theorem (Cisneros-Molina)}
+Let $\alpha :\Gamma \rightarrow GL_N(\C)$ be a representation of $\Gamma$.  Then the eigenvalues of the Dirac operator $D_{\alpha}^{\Gamma}$ on $S^3 / \Gamma$ are
+
+\begin{align*}
+-\frac{1}{2}-(k+1)~ &\mbox{with~multiplicity}~ \langle \chi_{E_{k+1}}, \chi_{\alpha} \rangle_{\Gamma} (k + 1), \quad &k \geq 0, \\
+-\frac{1}{2}+(k+1)~ &\mbox{with~multiplicity}~ \langle \chi_{E_{k-1}}, \chi_{\alpha} \rangle_{\Gamma} (k + 1), \quad &k \geq 1.
+\end{align*}
   \end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{Theorem(Cisneros-Molina)}
+Let $k = c_{\Gamma} l + m$ with $0 \leq m < c_{\Gamma}$.
+\begin{enumerate}
+\item If $ -1 \in \Gamma$, then
+\[
+\langle \chi_{E_k}, \chi_{\alpha} \rangle_{\Gamma} =
+\left\{
+	\begin{array}{ll}
+		\frac{c_{\Gamma} l}{|\Gamma |} (\chi_{\alpha}(1) + \chi_{\alpha}(-1)) + \langle \chi_{E_m}, \chi_{\alpha} \rangle_{\Gamma}  & \mbox{if $k$ is even}  \\
+		\frac{c_{\Gamma} l}{|\Gamma |} (\chi_{\alpha}(1) - \chi_{\alpha}(-1)) + \langle \chi_{E_m}, \chi_{\alpha} \rangle_{\Gamma} & \mbox{if $k$ is odd}.
+	\end{array}
+\right.
+\]
+\item If $-1 \notin \Gamma$, then
+\[
+\langle \chi_{E_k}, \chi_{\alpha} \rangle_{\Gamma} = \frac{N c_{\Gamma}l}{\#\Gamma} + \langle \chi_{E_m}, \chi_{\alpha} \rangle_{\Gamma}.
+\]
+\end{enumerate}
+\end{block}
+
 \end{frame}
 
 \begin{frame}
@@ -895,10 +946,28 @@ $\{ -\frac{T}{2} -\frac{mN}{T} | m \in \N \}$ & $2mN$ \\
   \end{block}
 \end{frame}
 
+\begin{frame}
+\frametitle{Sketch of calculation}
+By decomposing $\chi_{\alpha}$ as a sum of irreducible characters, we may assume that $\alpha$ is an irreducible representation. Main task is to compute the inner products
+\[
+\beta_m^{\alpha} = \langle \chi_{E_{m-1}}, \chi_{\alpha} \rangle_{\Gamma},
+\]
+
+\[
+\gamma_m^{\alpha} = \langle \chi_{E_{m+1}}, \chi_{\alpha} \rangle_{\Gamma},
+\]
+
+\pause
+
+\begin{block}{}
+	I.e. we need to decompose $\chi_{E_k}$ into irreducible characters.
+\end{block}
+\end{frame}
+
 \section{Bieberbach manifolds}
 
 \begin{frame}
-  \frametitle{Calculation}
+  \frametitle{Bieberbach manifolds}
 
   \begin{block}{Strategy}
   Use linear transformations of the parameters of the spectrum to almost cover $\Z ^3$.  By almost cover, I mean that 2-dimensional, 1-dimensional or 0-dimensional sublattices of $\Z^2$ through the origin may be covered multiple times, or not at all.
