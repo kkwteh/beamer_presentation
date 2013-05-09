@@ -758,16 +758,36 @@ B_k(P_l) & = \begin{cases}
 	\end{block}
 \end{frame}
 
+\begin{frame}
+	\begin{block}{Theorem (B\"ar)}
+		On $SU(2)/ H$ equipped with the Berger metric (parameter $T>0$), $D$ acts on $V_n \otimes \Hom_{H}(V_{\gamma},\Sigma_n)$ as $\id \otimes D_n$, where $D_n = D_n' -(T/2 + 1/T)$, and
+	\begin{align*}
+	D_n ' A_k & = \frac{1}{T}(n-2k)A_k + 2(k+1)A_{k+1},~\rm{k~even} \\
+	D_n ' A_k & = 2(n+1-k) A_{k-1} + \frac{1}{T}(2k - n)A_k,~\rm{k~odd}\\
+	D_n ' B_k & = 2(n+1-k) B_{k-1} + \frac{1}{T}(2k - n)B_k,~\rm{k~even}\\
+	D_n ' B_k & = \frac{1}{T}(n-2k)B_k + 2(k+1)B_{k+1},~\rm{k~odd}.
+	\end{align*}	
+	\end{block}
+\end{frame}
 
 \begin{frame}
-  \frametitle{Coset spaces of $SU(2)$ - Dirac operator}
-  \begin{block}{Theorem (B\"ar)}
-    In general, there is an expression for the action of the Dirac operator on the representation-theoretic space.
-  \end{block}
-
-  \begin{block}{}
-    The representation theory of $SU(2)$ is well-understood. Therefore once one has an expression of the Dirac operator in terms of the representation theory, obtaining the Dirac spectrum is simply a matter of calculation.
-  \end{block}
+\frametitle{Lens space $H = \Z_N$}
+\begin{block}{}
+Using his results on the Dirac operator, B\"ar goes on to compute the Dirac spectrum of lens spaces. There was a mistake. Which I corrected.
+\end{block}
+\pause
+\begin{block}{}
+To compute the spectrum, the main task is to determine $\Hom_{\Z_N}(V_n, \Sigma_3)$. I.e. which linear transformations commute with the generator of $\Z_N$,
+\[
+B =
+\left(
+\begin{array}{cc}
+e^{\frac{2 \pi i}{N}} & 0 \\
+0 & e^{\frac{-2 \pi i}{N}}
+\end{array}
+\right)
+\]
+\end{block}
 \end{frame}
 
 \begin{frame}
@@ -781,19 +801,6 @@ B_k(P_l) & = \begin{cases}
   \[
   \Tr f(D/\Lambda) = \frac{1}{|\Gamma|}(\Lambda^3 \widehat{f}^{(2)}(0) -\frac{1}{4} \Lambda \widehat{f}(0)) + O(\Lambda^{-k})
   \]
-\end{frame}
-
-\begin{frame}
-  \frametitle{Lens Spaces}
-  \begin{block}{}
-    Originally, I computed the spectral action for lens spaces ($\Gamma$ is a finite cyclic group) using an expression for the lens space spectrum found in the literature. Using this result, I tried to calculate the spectral action and discovered that the Dirac spectrum did not decompose into arithmetic progressions where the multiplicities became simple polynomials.
-  \end{block}
-
-  \pause
-
-  \begin{block}{}
-    The break in the pattern for the spectral action led me to the discovery that the calculation of the lens space spectrum was wrong and I subsequently corrected it.
-  \end{block}
 \end{frame}
 
 \section{Coset spaces of $SU(2)$ with matter}
