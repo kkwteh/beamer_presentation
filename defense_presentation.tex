@@ -896,7 +896,7 @@ $\{ -\frac{T}{2} -\frac{mN}{T}| m \in \N$ \}  & $2mN$ \\
 $c_{\Gamma}$ is the exponent of the group $\Gamma$, the least common multiple of the orders of the elements in $\Gamma$
 \end{block}
 \begin{block}{$E_k$}
-$E_k$ is the dimension $k+1$ irreducible representation of $SU(2)$ of homogenous complex polynomials in two variables of order $k$
+$E_k$ is the dimension $k+1$ irreducible representation of $SU(2)$ of homogenous complex polynomials in two variables of order $k$. We also use $E_k$ to denote the corresponding restriction representation of a subgroup $\Gamma$.
 \end{block}
 \end{frame}
 
@@ -960,8 +960,22 @@ By decomposing $\chi_{\alpha}$ as a sum of irreducible characters, we may assume
 \pause
 
 \begin{block}{}
-	I.e. we need to decompose $\chi_{E_k}$ into irreducible characters.
+	I.e. we need to decompose $\chi_{E_k}$ into irreducible characters for $k = 0 ,1 ,\ldots c_{\Gamma}$.
 \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Sketch of calculation}
+Let $\chi_j, x_j, j = 1,2,\ldots, d$ be the irreducible characters, and representatives of the conjugacy classes of $\Gamma$.
+\[
+\chi_{E_k} = \sum_{j=0}^d c_j^k \chi_j
+\]
+
+Let $b_j = \chi_{E_k}(x_j), A = (a_{ij}), a_{ij} = \chi_j(x_i)$.
+\[
+b = A c
+\]
+
 \end{frame}
 
 \section{Bieberbach manifolds}
