@@ -1232,28 +1232,35 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 
 \begin{frame}
   \begin{block}{Theorem (Lai)}
-    For a compact Lie group, the one-parameter family of Dirac operators $D_t$ may be written in terms of the Casimir operator.
+    One may identify spinors as
+	\[
+\bigoplus _{\lambda \in \widehat{G}} V_{\rho}\otimes V_\lambda \otimes V_\lambda ^* ,
+	\]
+    For a compact Lie group, the one-parameter family of Dirac operators $D_t$ may be written in terms of the Casimir operator. $D_t^2 = T_t \otimes \id$, where 
     \[
-      1 \otimes \Cas + (3t-1)(\Delta \Cas - 1 \otimes \Cas - \Cas \otimes 1) + 9 t^2 |\rho|^2
+      T_t = 1 \otimes \Cas + (3t-1)(\Delta \Cas - 1 \otimes \Cas - \Cas \otimes 1) + 9 t^2 |\rho|^2
     \]
   \end{block}
+\end{frame}
 
-  \begin{block}{}
+\begin{frame}
+	\frametitle{Definitions}
+  \begin{block}{Casimir operator}
     $\Cas$ acts by the scalar 
     \[
     <\Lambda, \Lambda> + <\Lambda, 2 \rho>
     \]
     on irreducible representations of highest weight $\Lambda$.
   \end{block}
-\end{frame}
-
-\begin{frame}
-	\frametitle{Definitions}
 	\begin{block}{Killing Form}
 	\[
 	(x,y) = \Tr(\rm{ad}(x) \cdot \rm{ad}(y))
 	\]
 	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Definitions}
 	\begin{block}{Root scalar product}
 	\[
 	\alpha(k) = (h_{\alpha}, k)
@@ -1263,6 +1270,21 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 	\]
 	\end{block}
 	\begin{block}{Weyl vector $\rho = \frac{1}{2} \sum_{\alpha > 0} \alpha$}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Clebsch-Gordan decomposition}
+	To evaluate $\Delta \Cas$, one needs the decomposition of $V_{\rho} \otimes V_{\lambda}$ into irreducible components.
+\end{frame}
+
+\begin{frame}
+	\frametitle{$SU(2)$}
+	\begin{block}{Clebsch-Gordan decomposition}
+		$V_{\rho} = V_{1}$, and 
+		\[
+		V_{\rho} \otimes V_m = V_{m+1} \oplus V_{m-1}
+		\]
 	\end{block}
 \end{frame}
 
@@ -1307,6 +1329,39 @@ T_1 (p,q) = (p,q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
 \end{frame}
 
 \begin{frame}
+	\frametitle{$SU(3)$, general $t$}
+	\begin{block}{Clebsch-Gordan decomposition}
+\begin{equation}
+V_{\rho} \otimes V_{(p,q)} = \oplus_{\mu} V_{\mu},
+\end{equation}
+
+\begin{equation}
+\begin{array}{|c|c|}
+\hline
+\mathrm{Summand} & \mathrm{Parameter~Values}\\
+\hline
+V_{(p+1,q+1)} & p \in \N, q \in \N\\
+\hline
+V_{(p-1,q+2)} & p \in \N^{\geq 1}, q \in \N\\
+\hline
+V_{(p,q)} & p \in \N, q \in \N, (p,q)\neq (0,0) \\
+\hline
+V_{(p-2,q+1)} & p \in \N^{\geq 2}, q \in \N\\
+\hline
+V_{(p+2,q-1)} & p \in \N, q \in \N^{\geq 1} \\
+\hline
+V_{(p,q)} & p \in \N^{\geq 1}, q \in \N^{\geq 1} \\
+\hline
+V_{(p+1,q-2)} & p \in \N, q \in \N^{\geq 2} \\
+\hline
+V_{(p-1,q-1)} & p \in \N^{\geq 1}, q \in \N^{\geq 1} \\
+\hline
+\end{array} .
+\end{equation}
+	\end{block}
+\end{frame}
+
+\begin{frame}
   \begin{block}{Two variable Euler-Maclaurin formula}
     \begin{align*}
       &\sum_{p=0}^{\infty} \sum_{q=0}^{\infty} ` g(p,q) =\\
@@ -1329,6 +1384,7 @@ T_1 (p,q) = (p,q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
 
 \begin{frame}
 	\begin{block}{Theorem (Teh)}
+	For general $t$, the spectral action of $SU(3)$ may be computed using the Euler-Maclaurin formula, and is given by
 		{\tiny
 		\begin{align*}
 	 		&\Tr f(D_t^2/ \Lambda^2) = \\
