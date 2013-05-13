@@ -140,13 +140,22 @@
 \titlepage
 \end{frame}
 
+\begin{frame}
+\frametitle{Overview}
+\begin{itemize}
+\item Motivation: Introduction to Noncomutative Geometry and the Spectral Action
+\item Summary of results
+\item Calculations of spectral action
+\end{itemize}
+\end{frame}
+
 \section{Intro to NCG and spectral action}
 
 \subsection{Spectral Triples}
 \begin{frame}
   \frametitle{Spectral Triples - Definition}
   \begin{block}{Definition}
-    A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
+    A spectral triple plays the role of Riemannian manifold in NCG. A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
   \end{block}
   \pause
 
@@ -157,12 +166,12 @@
 
 
 \begin{frame}
-  \frametitle{Spectral Triples - Example}
+  \frametitle{Spectral Triples - The basic example}
   \begin{exampleblock}{Compact spin manifold $M$}
     \begin{itemize}
       \item $\cA = C^{\infty}(M)$
       \item $\cH = L^2(M, S)$, square-integrable sections of spinor bundle
-      \item $D$ Dirac operator associated with spin structure
+      \item $D$ Dirac operator
     \end{itemize}
   \end{exampleblock}
 \end{frame}
@@ -175,16 +184,16 @@
   \begin{block}{}
     For a spectral triple, $(\cA, \cH, D)$, the spectral action is given by
     \[
-    \Tr f(D / \Lambda)
+    \Tr f(D / \Lambda) = \sum_{\lambda \in \Spec D} f(\lambda/\Lambda)
     \]
   \end{block}
 
   \pause
 
   \begin{itemize}
-    \item Typically, $f$ is a smooth approximation to a cutoff function.
+    \item In most applications, $f$ is a smooth approximation to a cutoff function.
     \item For our purposes, $f$ is an even function, $f \in \mathcal{S} (\R)$
-    \item $\Lambda > 0$
+    \item The parameter, $\Lambda$ is a positive real number, and represents the energy scale in physical applications.
     \item It is equivalent to calculate $f(D^2/ \Lambda ^2)$, since we may regard this simply as a different choice of the function $f$.
   \end{itemize}
 
@@ -234,10 +243,6 @@
     \]
   \end{block}
 \end{frame}
-
-\subsection{Noncommutative Cosmology}
-
-\section{Spectral Action}
 
 \subsection{Perturbative vs Non-perturbative}
 
@@ -321,21 +326,24 @@
     multiplicity of $n + 1/2$ is $n(n+1)$
   \end{block}
 
-  \pause
-
   \begin{block}{}
-    Important features of alternative expression:
-    \begin{itemize}
-      \item spectrum is indexed by $\Z$
-      \item multiplicity is a polynomial, and in particular, smooth
-    \end{itemize}
+   Spectrum is indexed by $\Z$ in the alternative expression
   \end{block}
 \end{frame}
 
 \begin{frame}
   \frametitle{The First Example: $SU(2)$ aka $S^3$}
+  \begin{block}{Multiplicity polynomial}
+  	Observe that for $P(u) = u^2 - 1/4$, $P(n + 1/2) = n(n+1)$. That is, $P$ maps eigenvalues to multiplicities.
+  \end{block}
+  
+  \pause
+  
   \begin{block}{}
-    Define $g(u) = (u^2 -1/4)f(u/\Lambda)$
+    Define $g(u) = (u^2 -1/4)f(u/\Lambda)$. Then
+    \[
+    \Tr f(D/\Lambda) = \sum_{n \in Z} g(n+1/2)
+    \]
   \end{block}
 
   \pause
@@ -346,9 +354,9 @@
       &= \Lambda ^3 \int_{\R}v^2 f(v) e^{-2\pi i \Lambda x v}dv - \frac{1}{4} \Lambda \int_{\R}f(v)e^{-2\pi i \Lambda xv}dv
     \end{align*}
   \end{block}
+\end{frame}
 
-  \pause
-
+\begin{frame}
   \begin{block}{}
     Applying the Poisson summation formula to $g$ yields
 
@@ -376,12 +384,6 @@
     \[
       Tr(f(D/\Lambda)) = \Lambda^3 \int_\R v^2 f(v) dv - \frac{1}{4}\Lambda \int_{\R}f(v)dv + O(\Lambda)^{-k}
     \]
-  \end{block}
-
-  \pause
-
-  \begin{block}{}
-    Concrete estimates of the remainder are possible
   \end{block}
 \end{frame}
 
