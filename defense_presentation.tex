@@ -865,10 +865,6 @@ $\{ -\frac{T}{2} -\frac{mN}{T}| m \in \N$ \}  & $2mN$ \\
   \]
 \end{frame}
 
-\begin{frame}
-	\frametitle{Calculations of Dirac spectrum and patterns in the spectral action}
-\end{frame}
-
 \section{Coset spaces of $SU(2)$ with matter}
 
 \begin{frame}
@@ -1141,7 +1137,7 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
   \pause
 
   \begin{block}{}
-    Surprisingly, the technique doesn't work for $G5$
+    Interestingly, the technique doesn't work for $G5$
   \end{block}
 \end{frame}
 
@@ -1149,10 +1145,10 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 \frametitle{Bieberbach manifolds}
 \begin{block}{Spectral Action}
 \begin{align*}
-&\rm{G2(a,b,c,d)} \quad HSL(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
-&\rm{G3} \quad HL^2 \frac{1}{\sqrt{3}}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
-&\rm{G4(a,b)} \quad HL^2 \frac{1}{2}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
-&\rm{G6} \quad HLS \frac{1}{2}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + t^2)dudvdt + O(\Lambda^{-\infty})\\
+&G2(a,b,c,d) \quad HSL(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
+&G3 \quad HL^2 \frac{1}{\sqrt{3}}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
+&G4(a,b) \quad HL^2 \frac{1}{2}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + w^2)dudvdw + O(\Lambda^{-\infty})\\
+&G6 \quad HLS \frac{1}{2}(\frac{\Lambda}{2\pi})^3 \int_{\R ^3} f(u^2 +v^2 + t^2)dudvdt + O(\Lambda^{-\infty})\\
 \end{align*}
 \end{block}
 \end{frame}
@@ -1174,23 +1170,17 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
       \sum_{k=a}^b g(k) &= \int_a^b g(x) dx + \frac{g(a) + g(b)}{2} +  \\
       & \sum_{j=2}^m \frac{B_j}{j!}(g^{(j-1)}(b) - g^{(j-1)}(a)) - R_m
     \end{align*}
-  \end{block}
 
-  \pause
-
-  \begin{block}{}
     \begin{itemize}
       \item Useful when Dirac spectrum is indexed by $\N$ instead of $\Z$
       \item $B_j$ are the Bernoulli numbers
-      \item \[
-        R_m = \frac{(-1)^m}{m!} \int_a^b g^{(m)}(x) B_m (x-[x])dx
-      \]
+      \item $R_m = \frac{(-1)^m}{m!} \int_a^b g^{(m)}(x) B_m (x-[x])dx$
     \end{itemize}
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Bernoulli numbers}
+  \frametitle{Bernoulli numbers, polynomials}
   Bernoulli numbers are value at 0 of Bernoulli polynomials. The Bernoulli polynomials are defined inductively as
   \[
     B_0(x) = 1, B_n'(x) = nB_{n-1}(x), \int_0^1 B_n(x)dx = 0
@@ -1317,7 +1307,7 @@ T_1 (p,q) = (p,q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
 
 \begin{frame}
 	\frametitle{$SU(3)$, general $t$}
-	\begin{block}{Clebsch-Gordan decomposition}
+	\begin{block}{Theorem (O'Reilly)}
 \begin{equation}
 V_{\rho} \otimes V_{(p,q)} = \oplus_{\mu} V_{\mu},
 \end{equation}
