@@ -203,20 +203,6 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Spectral action - Non-perturbative form}
-  \begin{block}{Poisson summation formula calculation of the spectral action ("Non-perturbative")}
-    \[
-      \Tr f (D/\Lambda) = \sum_{n \in \Z} h(x + \lambda n) = \frac{1}{\lambda} \sum_{n \in \Z} e^{\frac{2\pi i n x}{\lambda}}\widehat{h}(\frac{n}{\lambda})
-    \]
-  \end{block}
-  \pause
-
-  \begin{block}{}
-	The non-perturbative calculation is significant, because in this form the spectral action produces a slow-roll inflation potential.
-  \end{block}
-\end{frame}
-
-\begin{frame}
 	\frametitle{Aside on Poisson Summation Formula}
 	\begin{block}{Poisson Summation Formula}
 		\[
@@ -234,23 +220,8 @@
 	\end{block}
 \end{frame}
 
-\subsection{Slow-roll Potential}
 \begin{frame}
-	\frametitle{Slow-roll potential}
-	\begin{block}{}
-		Substitute $D^2 \mapsto D^2 + \phi^2$. On $S^3 \times S^1$, and assuming $\phi^2 / \Lambda^2$ is small, this leads to a shift in the spectral action of
-		\[
-		-\pi \Lambda ^2 \beta a^3 \int_0^{\infty} h(v)dv \phi ^2 + \frac{1}{2} \pi \beta a h(0) \phi^2 + \frac{1}{2} \pi \beta a^3 h(0) \phi^4.
-		\]
-	\end{block}
-	
-	\begin{block}{}
-		This quantity is physically interpreted as a slow-roll inflation potential.  The form of the potential and its corresponding slow-roll parameters are sensitive to the cosmic geometry.
-	\end{block}
-\end{frame}
-
-\begin{frame}
-  \frametitle{Non-perturbative calculations: The first example, $SU(2)$}
+  \frametitle{A non-perturbative calculation on $SU(2)$}
   \begin{block}{Usual Expression of Dirac Spectrum}
     $\rm{Spec}(D) = \{ \pm (\frac{3}{2} + k) | k \in \Z, k \geq 0\}$
 
@@ -271,7 +242,7 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{The First Example: $SU(2)$ aka $S^3$}
+  \frametitle{A non-perturbative calculation on $SU(2)$}
   \begin{block}{Multiplicity polynomial}
   	Observe that for $P(u) = u^2 - 1/4$, $P(n + 1/2) = n(n+1)$. That is, $P$ maps eigenvalues to multiplicities.
   \end{block}
@@ -324,6 +295,20 @@
       Tr(f(D/\Lambda)) = \Lambda^3 \int_\R v^2 f(v) dv - \frac{1}{4}\Lambda \int_{\R}f(v)dv + O(\Lambda)^{-k}
     \]
   \end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Slow-roll potential}
+	\begin{block}{}
+		This non-perturbative expression of the spectral action is interesting because it provides a slow-roll cosmological inflation model. Substitute $D^2 \mapsto D^2 + \phi^2$. On $S^3 \times S^1$, and assuming $\phi^2 / \Lambda^2$ is small, this leads to a shift in the spectral action of
+		\[
+		-\pi \Lambda ^2 \beta a^3 \int_0^{\infty} h(v)dv \phi ^2 + \frac{1}{2} \pi \beta a h(0) \phi^2 + \frac{1}{2} \pi \beta a^3 h(0) \phi^4.
+		\]
+	\end{block}
+	
+	\begin{block}{}
+		This quantity is physically interpreted as a slow-roll inflation potential.  The form of the potential and its corresponding slow-roll parameters are sensitive to the cosmic geometry.
+	\end{block}
 \end{frame}
 
 \begin{frame}
