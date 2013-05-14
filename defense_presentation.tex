@@ -140,40 +140,26 @@
 \titlepage
 \end{frame}
 
-\begin{frame}
-\frametitle{Overview}
-\begin{itemize}
-\item Motivation: Introduction to Noncomutative Geometry and the Spectral Action
-\item Summary of results
-\item Calculations of spectral action
-\end{itemize}
-\end{frame}
-
 \section{Intro to NCG and spectral action}
 
 \subsection{Spectral Triples}
 \begin{frame}
   \frametitle{Spectral Triples - Definition}
   \begin{block}{Definition}
-    A spectral triple plays the role of Riemannian manifold in NCG. A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
+    Spectral triples are the generalization of Riemannian manifolds in noncommutative geometry. A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
   \end{block}
-  \pause
-
-  \begin{block}{}
-    A spectral triple is even if the Hilbert space $\cH$ is equipped with a $\Z /2 $-grading $\gamma$ which commutes with any $a \in \cA$ and anti-commutes with $D$.
-\end{block}
 \end{frame}
 
 
 \begin{frame}
   \frametitle{Spectral Triples - The basic example}
-  \begin{exampleblock}{Compact spin manifold $M$}
+  \begin{block}{Compact spin manifold $M$}
     \begin{itemize}
       \item $\cA = C^{\infty}(M)$
       \item $\cH = L^2(M, S)$, square-integrable sections of spinor bundle
       \item $D$ Dirac operator
     \end{itemize}
-  \end{exampleblock}
+  \end{block}
 \end{frame}
 
 \subsection{Spectral Action}
@@ -212,7 +198,7 @@
   \frametitle{Noncommutative Standard Model}
 
   \begin{block}{}
-    A principal application of noncommutative geometry is a formulation of the standard model of physics using the mathematical framework of noncommutative geometry.
+    The spectral action is interesting because it naturally gives a standard model Lagrangian minimally coupled with gravity on a curved spacetime.
   \end{block}
 
   \pause
@@ -244,11 +230,9 @@
   \end{block}
 \end{frame}
 
-\subsection{Perturbative vs Non-perturbative}
-
 \begin{frame}
-  \frametitle{Perturbative vs Non-perturbative}
-  \begin{block}{Expansion of spectral action via Gilkey's Theorem ("Perturbative")}
+  \frametitle{Perturbative}
+  \begin{block}{Heat kernel expansion of spectral action}
     \[
       \Tr f (D/\Lambda) \sim 2 \Lambda^4 f_4 a_0 + 2 \Lambda^2 f_2 a_2 + f_0 a_4 + \cdots + \Lambda^{-2k} f_{-2k} a_{4+2k} + \cdots
     \]
@@ -258,6 +242,20 @@
       &= f(0), ~ k = 0\\
       &= (-1)^{-k/2} \frac{(-k/2)!}{-k!}f^{(-k)}(0), ~ k < 0
     \end{align*}
+  \end{block}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Non-perturbative calculation of the spectral action}
+  \begin{block}{Poisson summation formula calculation of the spectral action ("Non-perturbative")}
+    \[
+      \Tr f (D/\Lambda) = \sum_{n \in \Z} h(x + \lambda n) = \frac{1}{\lambda} \sum_{n \in \Z} e^{\frac{2\pi i n x}{\lambda}}\widehat{h}(\frac{n}{\lambda})
+    \]
+  \end{block}
+  \pause
+
+  \begin{block}{}
+	The non-perturbative calculation is significant, because in this form the spectral action produces a slow-roll inflation potential.
   \end{block}
 \end{frame}
 
@@ -277,22 +275,6 @@
 		\sum_{n \in \Z} h(x + \lambda n) = \frac{1}{\lambda} \sum_{n \in \Z} e^{\frac{2\pi i n x}{\lambda}}\widehat{h}(\frac{n}{\lambda})
 		\]
 	\end{block}
-	
-	
-\end{frame}
-
-\begin{frame}
-  \frametitle{Perturbative vs Non-perturbative}
-  \begin{block}{Poisson summation formula calculation of the spectral action ("Non-perturbative")}
-    \[
-      \Tr f (D/\Lambda) = \sum_{n \in \Z} h(x + \lambda n) = \frac{1}{\lambda} \sum_{n \in \Z} e^{\frac{2\pi i n x}{\lambda}}\widehat{h}(\frac{n}{\lambda})
-    \]
-  \end{block}
-  \pause
-
-  \begin{block}{}
-	The non-perturbative calculation is significant, because in this form the spectral action produces a slow-roll inflation potential.
-  \end{block}
 \end{frame}
 
 \subsection{Slow-roll Potential}
