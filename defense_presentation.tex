@@ -195,6 +195,23 @@
 \end{frame}
 
 \begin{frame}
+  \frametitle{A non-perturbative calculation of the spectral action}
+  \begin{block}{Dirac spectrum on $SU(2)$}
+    $\rm{Spec}(D) = \{ \pm (\frac{3}{2} + k) | k \in \Z, k \geq 0\}$
+
+    multiplicity of $(\frac{3}{2} + k)$ is $2 {k+2} \choose {k}$
+  \end{block}
+
+  \pause
+
+  \begin{block}{Alternative Expression}
+    $\rm{Spec}(D) = \{n + 1/2 | n \in \Z \}$
+
+    multiplicity of $n + 1/2$ is $n(n+1)$
+  \end{block}
+\end{frame}
+
+\begin{frame}
 	\frametitle{Aside on Poisson Summation Formula}
 	\begin{block}{Poisson Summation Formula}
 		\[
@@ -213,23 +230,6 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{A non-perturbative calculation of the spectral action}
-  \begin{block}{Dirac spectrum on $SU(2)$}
-    $\rm{Spec}(D) = \{ \pm (\frac{3}{2} + k) | k \in \Z, k \geq 0\}$
-
-    multiplicity of $(\frac{3}{2} + k)$ is $2 {k+2} \choose {k}$
-  \end{block}
-
-  \pause
-
-  \begin{block}{Alternative Expression}
-    $\rm{Spec}(D) = \{n + 1/2 | n \in \Z \}$
-
-    multiplicity of $n + 1/2$ is $n(n+1)$
-  \end{block}
-\end{frame}
-
-\begin{frame}
   \frametitle{A non-perturbative calculation on $SU(2)$}
   \begin{block}{Multiplicity polynomial}
   	Observe that for $P(u) = u^2 - 1/4$, $P(n + 1/2) = n(n+1)$. That is, $P$ maps eigenvalues to multiplicities.
@@ -242,21 +242,17 @@
     \[
     \Tr f(D/\Lambda) = \sum_{n \in Z} g(n+1/2)
     \]
-
-    \begin{align*}
-      \widehat{g}(x) &= \int_{\R}g(u) e^{-2 \pi i x u}du = \int_{\R}(u^2 - \frac{1}{4})f(u/\Lambda)e^{-2 \pi i x u}du \\
-      &= \Lambda ^3 \int_{\R}v^2 f(v) e^{-2\pi i \Lambda x v}dv - \frac{1}{4} \Lambda \int_{\R}f(v)e^{-2\pi i \Lambda xv}dv
-    \end{align*}
   \end{block}
 \end{frame}
 
 \begin{frame}
   \begin{block}{}
-    Applying the Poisson summation formula to $g$ yields
+    Applying the Poisson summation formula to yields
 
-    \[
-      Tr(f(D/\Lambda)) = \Lambda^3 \sum_{\Z}(-1)^n \widehat{f}^{(2)}(\Lambda n) - \frac{1}{4} \Lambda \sum_{\Z}(-1)^n \widehat{f}(\Lambda n)
-    \]
+    \begin{align*}
+      Tr(f(D/\Lambda)) &= \sum_{n \in \Z} (-1)^n \widehat{g}(n)\\
+      &= \Lambda^3 \sum_{\Z}(-1)^n \widehat{f}^{(2)}(\Lambda n) - \frac{1}{4} \Lambda \sum_{\Z}(-1)^n \widehat{f}(\Lambda n) \\
+    \end{align*}
   \end{block}
 \end{frame}
 
@@ -276,7 +272,7 @@
     This gives the following theorem (Chamseddine, Connes)
 
     \[
-      Tr(f(D/\Lambda)) = \Lambda^3 \int_\R v^2 f(v) dv - \frac{1}{4}\Lambda \int_{\R}f(v)dv + O(\Lambda)^{-k}
+      \Tr(f(D/\Lambda)) = \Lambda^3 \int_\R v^2 f(v) dv - \frac{1}{4}\Lambda \int_{\R}f(v)dv + O(\Lambda)^{-k}
     \]
   \end{block}
 \end{frame}
@@ -375,7 +371,29 @@ P_1(u)  = \frac{1}{4} u^2 - \frac{1}{4} u - \frac{3}{16}, \quad P_2(u)  = \frac{
 
 \begin{frame}
 	\frametitle{Poincar\'e Homology Sphere}
-	\begin{block}{Spectrum of spherical space forms}
+	$SU(2)/ \Gamma$, where $\Gamma$ is binary icosahedral group.
+
+	24 elements of form:
+\[
+\{ \pm 1, \pm i , \pm j, \pm k , \frac{1}{2}( \pm 1 \pm i \pm j \pm k) \} .
+\]
+96 elements of following form, or even permutation of it:
+\[
+1/2 (0 \pm i \pm \phi^{-1} j \pm \phi k),
+\]
+where $\phi$ is the golden ratio.
+\end{frame}
+
+\begin{frame}
+	\frametitle{Spherical space forms}
+	\begin{block}{Definition}
+	 A spherical space form is a quotient space $S^n / \Gamma$, where $\Gamma \subset SO(n+1)$ is a finite group acting without fixed points
+	 \end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Spherical space forms}
+	\begin{block}{Encode spectrum in generating functions}
 	\begin{align*}
 F_+(z) & = \sum_{k=0}^{\infty} m (\frac{n}{2}+k,D)z^k  \\
 F_-(z) &= \sum_{k=0}^{\infty} m (-(\frac{n}{2}+k),D)z^k .
@@ -384,7 +402,7 @@ F_-(z) &= \sum_{k=0}^{\infty} m (-(\frac{n}{2}+k),D)z^k .
 \end{frame}
 
 \begin{frame}
-	\begin{block}{Formula for the generating functions}
+	\begin{block}{Formula for the generating functions (B\"ar)}
 		\begin{align*}
 F_+ (z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma}  \frac{\chi^-(\epsilon(\gamma)) - z \cdot \chi^+ (\epsilon(\gamma))}{\det(1_{2m} - z \cdot \gamma)}, \\ \label{Spmultgen2}
 F_-(z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma} \frac{\chi^+(\epsilon(\gamma)) - z \cdot \chi^- (\epsilon(\gamma))}{\det(1_{2m} - z \cdot \gamma)}.
