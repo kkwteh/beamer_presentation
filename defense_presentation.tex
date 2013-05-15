@@ -146,7 +146,7 @@
 \begin{frame}
   \frametitle{Spectral Triples - Definition}
   \begin{block}{Definition}
-    Spectral triples are the generalization of Riemannian manifolds in noncommutative geometry. A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
+    A spectral triple $(\cA, \cH, D)$ is given by an involutive unital algebra $\cA$ represented as operators in a Hilbert space $\cH$ and a self-adjoint operators $D$ with compact resolvent such that all commutators $[D, a]$ are bounded for $a \in \cA$.
   \end{block}
 \end{frame}
 
@@ -156,7 +156,7 @@
   \begin{block}{Compact spin manifold $M$}
     \begin{itemize}
       \item $\cA = C^{\infty}(M)$
-      \item $\cH = L^2(M, S)$, square-integrable sections of spinor bundle
+      \item $\cH = L^2(M, S)$
       \item $D$ Dirac operator
     \end{itemize}
   \end{block}
@@ -177,18 +177,10 @@
   \pause
 
   \begin{itemize}
-    \item In most applications, $f$ is a smooth approximation to a cutoff function.
     \item For our purposes, $f$ is an even function, $f \in \mathcal{S} (\R)$
     \item The parameter, $\Lambda$ is a positive real number, and in physical applications represents the energy scale.
     \item It is equivalent to calculate $f(D^2/ \Lambda ^2)$, since we may regard this simply as a different choice of the function $f$.
   \end{itemize}
-
-  \pause
-
-  \begin{block}{}
-    The spectral action plays a central role in the Noncommutative Standard Model
-  \end{block}
-
 \end{frame}
 
 
@@ -198,7 +190,7 @@
   \frametitle{Noncommutative Standard Model}
 
   \begin{block}{}
-    The spectral action is interesting because it provides a standard model Lagrangian minimally coupled with gravity on a curved spacetime.
+    Using spectral triple and the spectral action, one can construct a standard model Lagrangian minimally coupled with gravity on a curved spacetime.
   \end{block}
 \end{frame}
 
@@ -221,8 +213,8 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{A non-perturbative calculation on $SU(2)$}
-  \begin{block}{Usual Expression of Dirac Spectrum}
+  \frametitle{A non-perturbative calculation of the spectral action}
+  \begin{block}{Dirac spectrum on $SU(2)$}
     $\rm{Spec}(D) = \{ \pm (\frac{3}{2} + k) | k \in \Z, k \geq 0\}$
 
     multiplicity of $(\frac{3}{2} + k)$ is $2 {k+2} \choose {k}$
@@ -234,10 +226,6 @@
     $\rm{Spec}(D) = \{n + 1/2 | n \in \Z \}$
 
     multiplicity of $n + 1/2$ is $n(n+1)$
-  \end{block}
-
-  \begin{block}{}
-   Spectrum is indexed by $\Z$ in the alternative expression
   \end{block}
 \end{frame}
 
@@ -254,11 +242,7 @@
     \[
     \Tr f(D/\Lambda) = \sum_{n \in Z} g(n+1/2)
     \]
-  \end{block}
 
-  \pause
-
-  \begin{block}{}
     \begin{align*}
       \widehat{g}(x) &= \int_{\R}g(u) e^{-2 \pi i x u}du = \int_{\R}(u^2 - \frac{1}{4})f(u/\Lambda)e^{-2 \pi i x u}du \\
       &= \Lambda ^3 \int_{\R}v^2 f(v) e^{-2\pi i \Lambda x v}dv - \frac{1}{4} \Lambda \int_{\R}f(v)e^{-2\pi i \Lambda xv}dv
@@ -298,9 +282,9 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{Slow-roll potential}
+	\frametitle{Slow-roll potential from non-perturbative spectral action}
 	\begin{block}{}
-		This non-perturbative expression of the spectral action is interesting because it provides a slow-roll cosmological inflation model. Substitute $D^2 \mapsto D^2 + \phi^2$. On $S^3 \times S^1$, and assuming $\phi^2 / \Lambda^2$ is small, this leads to a shift in the spectral action of
+	Substitute $D^2 \mapsto D^2 + \phi^2$. On $S^3 \times S^1$, and assuming $\phi^2 / \Lambda^2$ is small, this leads to a shift in the spectral action of
 		\[
 		-\pi \Lambda ^2 \beta a^3 \int_0^{\infty} h(v)dv \phi ^2 + \frac{1}{2} \pi \beta a h(0) \phi^2 + \frac{1}{2} \pi \beta a^3 h(0) \phi^4.
 		\]
@@ -313,7 +297,7 @@
 
 \begin{frame}
   \begin{block}{}
-  We want to know: Are there other situations where this technique works?
+  We want to know: Are there geometries besides $SU(2)$ where this technique works?
   \end{block}
 \end{frame}
 
@@ -560,7 +544,7 @@ H^-(z) = & -1 -3 z^{2}  -4z^{4}-2z^{6}+2z^{8}+ 6z^{10} + 9z^{12} + 9z^{14} + 4 z
 \frametitle{Obtaining the multiplicity polynomials}
 By computing several Taylor coefficients, $a_j$, of $F_+(z)$, we get the multiplicities for the first several eigenvalues of $D$.
 
-Next determine the unique polynomials $P_0, \ldots, P_59$ that satisfy
+Next determine the unique polynomials $P_0, \ldots, P_{59}$ that satisfy
 \[
 P_k(3/2 + k + 60n) = a_{k+60n}
 \]
@@ -713,7 +697,7 @@ B_k(P_l) & = \begin{cases}
 \begin{frame}
 \frametitle{Lens space $H = \Z_N$}
 \begin{block}{}
-Using his results on the Dirac operator, B\"ar goes on to compute the Dirac spectrum of lens spaces. There was a mistake. Which I corrected.
+Using his results on the Dirac operator, B\"ar goes on to compute the Dirac spectrum of lens spaces, but there was a mistake.
 \end{block}
 \pause
 \begin{block}{}
@@ -827,7 +811,7 @@ $\{ -\frac{T}{2} -\frac{mN}{T}| m \in \N$ \}  & $2mN$ \\
 \end{frame}
 
 \begin{frame}
-	\frametitle{Geometry}
+	\frametitle{Geometry of $SU(2) \times F$}
 	\begin{itemize}
 	\item $\Gamma \subset SU(2)$: a finite subgroup of isometries, acting by right multiplication.
 	
@@ -1086,7 +1070,7 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
   \pause
 
   \begin{block}{}
-    Interestingly, the technique doesn't work for $G5$
+    The technique doesn't work for $G5$
   \end{block}
 \end{frame}
 
@@ -1195,7 +1179,10 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 	<\alpha, \beta> = (h_{\alpha}, h_{\beta})
 	\]
 	\end{block}
-	\begin{block}{Weyl vector $\rho = \frac{1}{2} \sum_{\alpha > 0} \alpha$}
+	\begin{block}{Weyl vector}
+	 \[
+	 \rho = \frac{1}{2} \sum_{\alpha > 0} \alpha
+	 \]
 	\end{block}
 \end{frame}
 
@@ -1226,6 +1213,7 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 \end{frame}
 
 \begin{frame}
+	\frametitle{$SU(3), t = 1/3$}
   \begin{block}{Theorem(Teh)}
     The Dirac operator $D_{1/3}$ on $SU(3)$ has eigenvalues $p^2 + q^2 + pq$ for $(p,q) \in \N^2$ with multiplicities given by $2p^2q^2(p+q)^2$.
   \end{block}
@@ -1236,9 +1224,7 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
       \item In this case the linear transformations of parameter space must preserve the multiplicities in addition to the eigenvalues.
       \item The linear transformations are 
 \[
-T_1 (p,q) = (p,q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
-\]
-\[T_4(p,q) = (-p,-q),  T_5(p,q) = (p,-p-q), T_6(p,q) = (p+q,-p).
+T_1 (p,q) = (-p,-q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
 \]
     \end{itemize}
   \end{block}
@@ -1248,7 +1234,7 @@ T_1 (p,q) = (p,q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
   \begin{block}{Theorem(Teh)}
     For $t = 1/3$, one may apply the Poisson summation formula to compute the spectrum for $SU(3)$, and it is given by:
     \begin{align*}
-      & \Tr f(D_{1/3}^2)/\Lambda ^2) = \\
+      & \Tr f(D_{1/3}^2/\Lambda ^2) = \\
                                    & \frac{1}{3}\iint_{\R ^2} x^2y^2(x+y)^2f(x^2+y^2+xy)dxdy \Lambda^8 + O(\Lambda ^{-k})
     \end{align*}
   \end{block}
@@ -1322,6 +1308,10 @@ V_{(p-1,q-1)} & p \in \N^{\geq 1}, q \in \N^{\geq 1} \\
 		\end{align*}
 		}
 	\end{block}
+\end{frame}
+
+\begin{frame}
+	The end.
 \end{frame}
 \end{document}
 
