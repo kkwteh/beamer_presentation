@@ -617,7 +617,7 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
     
     The Dirac operator acts on each summand as $\id \otimes D_{n}$. When $SU(2)$ is equipped with the Berger metric with parameter $T > 0$, 
   \[
-D_n A = - \sum _k E_k \cdot A \cdot (\pi_n)_*(X_k) - \left( \frac{T}{2} + \frac{1}{T} \right).
+D_n A = - \sum _k E_k \circ A \circ (\pi_n)_*(X_k) - \left( \frac{T}{2} + \frac{1}{T} \right).
 \]
   \end{block}
 \end{frame}
@@ -661,7 +661,7 @@ i & 0\\
 	Basis: $P_k(z_1,z_2) = z_1^{n-k}z_2^k$
   \end{block}
   
-  \begin{block}{Action of $SU(2)$}
+  \begin{block}{Action of $SU(2)$ on $V_n$}
   	For $g \in SU(2)$,
 	\[
 	(gP)(z) = P(g\cdot z) 
@@ -671,10 +671,10 @@ i & 0\\
 
 \begin{frame}
 	\frametitle{Spinor space $\Sigma_3$}
-	\begin{block}{$\Sigma_3 \simeq \C ^2$}
-	\end{block}
-	\begin{block}{Action of $SU(2)$ on $\Sigma_3$}
-		Matrix multiplication
+	\begin{block}{}
+		Spinors: $\Sigma_3 \simeq \C ^2$
+		
+		Action of $SU(2)$ on $\Sigma_3$: Matrix multiplication
 	\end{block}
 \end{frame}
 
@@ -1121,13 +1121,6 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 \section{One-parameter family of Dirac operators on $SU(2)$ and $SU(3)$}
 
 \begin{frame}
-  \frametitle{Robertson-Walker metric on $SU(2)$}
-  \begin{block}{}
-    Chamseddine and Connes observed that one may apply the Euler-Maclaurin formula to compute the spectral action for $SU(2)$ equipped with the Robertson-Walker metric.
-  \end{block}
-\end{frame}
-
-\begin{frame}
   \frametitle{Euler-Maclaurin formula}
   \begin{block}{}
     For a smooth function $g$,
@@ -1173,11 +1166,12 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 \end{frame}
 
 \begin{frame}
-  \begin{block}{Theorem (Lai)}
-    One may identify spinors as
+    \begin{block}{Decomposition of spinors}
 	\[
 \bigoplus _{\lambda \in \widehat{G}} V_{\rho}\otimes V_\lambda \otimes V_\lambda ^* ,
 	\]
+    \end{block}
+      \begin{block}{Theorem (Lai)}
     For a compact Lie group, the one-parameter family of Dirac operators $D_t$ may be written in terms of the Casimir operator. $D_t^2 = T_t \otimes \id$, where 
     \[
       T_t = 1 \otimes \Cas + (3t-1)(\Delta \Cas - 1 \otimes \Cas - \Cas \otimes 1) + 9 t^2 |\rho|^2
@@ -1267,7 +1261,7 @@ T_1 (p,q) = (-p,-q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
     For $t = 1/3$, one may apply the Poisson summation formula to compute the spectrum for $SU(3)$, and it is given by:
     \begin{align*}
       & \Tr f(D_{1/3}^2/\Lambda ^2) = \\
-                                   & \frac{1}{3}\iint_{\R ^2} x^2y^2(x+y)^2f(x^2+y^2+xy)dxdy \Lambda^8 + O(\Lambda ^{-k})
+                                   & 2\iint_{\R ^2} x^2y^2(x+y)^2f(x^2+y^2+xy)dxdy \Lambda^8 + O(\Lambda ^{-k})
     \end{align*}
   \end{block}
 \end{frame}
