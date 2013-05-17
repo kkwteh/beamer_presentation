@@ -295,7 +295,7 @@
   \begin{itemize}
     \item $SU(2)/\Gamma$
     \item $SU(2)/\Gamma \times F$
-    \item Bieberbach manifolds (Quotients of flat $\mathbb{T} ^3$)
+    \item Bieberbach 3-manifolds (Flat, connected, compact)
     \item $SU(2), SU(3)$ with one-parameter family of Dirac operators
   \end{itemize}
 \end{frame}
@@ -405,8 +405,8 @@ F_-(z) &= \frac{1}{| \Gamma |} \sum_{\gamma \in \Gamma} \frac{\chi^+(\epsilon(\g
 	\begin{block}{}
 	\begin{itemize}
 		\item $\Gamma$ -- subgroup of $SO(n)$
-		\item $\chi^{\pm}$ -- characters of half spin representations of $\Spin(4)$
-		\item $\epsilon$ -- group homomorphism $SO(n) \rightarrow \Spin(4)$ depending on choice of spin structure
+		\item $\chi^{\pm}$ -- characters of half spin representations of $\Spin(n)$
+		\item $\epsilon$ -- group homomorphism $SO(n) \rightarrow \Spin(n)$ depending on choice of spin structure
 	\end{itemize}
 	\end{block}
 \end{frame}
@@ -727,7 +727,7 @@ B_k(P_l) & = \begin{cases}
 \end{frame}
 
 \begin{frame}
-\frametitle{Lens space $H = \Z_N$}
+\frametitle{Lens space $\Gamma = \Z_N$}
 \begin{block}{}
 Using his results on the Dirac operator, B\"ar goes on to compute the Dirac spectrum of lens spaces, but there was a mistake.
 \end{block}
@@ -786,7 +786,7 @@ It follows that $\Hom _{\mathbb{Z}_N} (V_{n}, \Sigma_3)$  has the following basi
 \end{frame}
 
 \begin{frame}
-One now determines the action of $D_n'$ on this basis using the formulas above. With respect to this basis, $D_n'$ is block diagonal with blocks of size size 1 or 2. The eigenvalues of these blocks may be computed directly, and as a result we obtain the spectrum.
+One now determines the action of $D_n'$ on this basis using the formulas above. With respect to this basis, $D_n'$ is block diagonal with blocks of size 1 or 2. The eigenvalues of these blocks may be computed directly, and as a result we obtain the spectrum.
 \end{frame}
 
 \begin{frame}
@@ -838,12 +838,12 @@ $\{ -\frac{T}{2} -\frac{mN}{T}| m \in \N$ \}  & $2mN$ \\
   \end{block}
 
   \begin{block}{}
-    $M \times F$ -- Physical models with matter. The cardinality of $F$ indicates the number of fermions in the model.
+    $M \times F$ -- Physical models with matter. $|F| = N$ indicates the number of fermions in the model.
   \end{block} 
 \end{frame}
 
 \begin{frame}
-	\frametitle{Geometry of $SU(2) \times F$}
+	\frametitle{Geometry of $SU(2)/\Gamma \times F$}
 	\begin{itemize}
 	\item $\Gamma \subset SU(2)$: a finite subgroup of isometries, acting by right multiplication.
 	
@@ -853,16 +853,6 @@ $\{ -\frac{T}{2} -\frac{mN}{T}| m \in \N$ \}  & $2mN$ \\
 	
 	\item Dirac operator: $D_{\alpha}^{\Gamma}$, restriction of $D\otimes \id_{\C ^N}$ to $C^{\infty}(S^3,\C^2 \otimes \C^N)^{\Gamma} \subset C^{\infty}(S^3,\C^2 \otimes \C^N)$
 	\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{Definitions}
-\begin{block}{Exponent $c_{\Gamma}$}
-$c_{\Gamma}$ is the exponent of the group $\Gamma$, the least common multiple of the orders of the elements in $\Gamma$
-\end{block}
-\begin{block}{$E_k$}
-$E_k$ is the dimension $k+1$ irreducible representation of $SU(2)$ of homogenous complex polynomials in two variables of order $k$. We also use $E_k$ to denote the corresponding restriction representation of a subgroup $\Gamma$.
-\end{block}
 \end{frame}
 
 \begin{frame}
@@ -898,6 +888,16 @@ Let $k = c_{\Gamma} l + m$ with $0 \leq m < c_{\Gamma}$.
 \end{enumerate}
 \end{block}
 
+\end{frame}
+
+\begin{frame}
+\frametitle{Definitions}
+\begin{block}{Exponent $c_{\Gamma}$}
+$c_{\Gamma}$ is the exponent of the group $\Gamma$, the least common multiple of the orders of the elements in $\Gamma$
+\end{block}
+\begin{block}{$E_k$}
+$E_k$ is the dimension $k+1$ irreducible representation of $SU(2)$ of homogenous complex polynomials in two variables of order $k$. We also use $E_k$ to denote the corresponding restriction representation of a subgroup $\Gamma$.
+\end{block}
 \end{frame}
 
 \begin{frame}
@@ -1254,6 +1254,31 @@ T_1 (p,q) = (-p,-q), T_2(p,q) = (-p,p+q), T_3(p,q) = (-p-q,p)
 \]
     \end{itemize}
   \end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Representation theory of $\mathfrak{su}(3)$}
+\begin{block}{Cartan subalgebra basis}
+\[
+H_1 = \mathrm{diag} (1,-1,0), H_2 = \mathrm{diag} (0,1,-1)
+\]
+\end{block}
+
+\begin{block}{Positive simple roots (eigenvalues of $H_i$ in adjoint representation)}
+\[
+\alpha_1 = (2,-1), \alpha_2 = (-1,2)
+\]
+\end{block}
+\end{frame}
+
+\begin{frame}
+\frametitle{Representation theory of $\mathfrak{su}(3)$}
+\begin{block}{Irreducible representations}
+Irreducible representations may be parametrized by their highest weights:
+\[
+(p,q) \in \N ^2
+\]
+\end{block}
 \end{frame}
 
 \begin{frame}
