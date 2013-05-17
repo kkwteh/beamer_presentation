@@ -280,14 +280,7 @@
 \begin{frame}
 	\frametitle{Slow-roll potential from non-perturbative spectral action}
 	\begin{block}{}
-	Substitute $D^2 \mapsto D^2 + \phi^2$. On $S^3 \times S^1$, and assuming $\phi^2 / \Lambda^2$ is small, this leads to a shift in the spectral action of
-		\[
-		-\pi \Lambda ^2 \beta a^3 \int_0^{\infty} h(v)dv \phi ^2 + \frac{1}{2} \pi \beta a h(0) \phi^2 + \frac{1}{2} \pi \beta a^3 h(0) \phi^4.
-		\]
-	\end{block}
-	
-	\begin{block}{}
-		This quantity is physically interpreted as a slow-roll inflation potential.  The form of the potential and its corresponding slow-roll parameters are sensitive to the cosmic geometry.
+	Substituting $D^2 \mapsto D^2 + \phi^2$ contributes new terms to the spectral action. These new terms are physically interpreted as a slow-roll inflation potential.  The form of the potential and its corresponding slow-roll parameters are sensitive to the cosmic geometry.
 	\end{block}
 \end{frame}
 
@@ -614,29 +607,50 @@ Therefore, when we apply the Poisson summation formula, the spectral action beco
 \end{frame}
 
 \begin{frame}
-  \frametitle{Dirac operator on homogeneous spaces}
+  \frametitle{Dirac operator on homogeneous space $SU(2)/\Gamma$}
   \begin{block}{Theorem(B\"ar)}
-    The Hilbert space of $L^2$-spinors of $G/H$ may be given the representation theoretic form
+    The Hilbert space of spinors of $SU(2)/ \Gamma$ may be decomposed as
 
     \[
-      \overline{\oplus_{\gamma \in \hat{G}} V_{\gamma} \otimes \Hom_{H}(V_{\gamma}, \Sigma_{n})}
+      \overline{\oplus_{n} V_{n} \otimes \Hom_{H}(V_{n}, \Sigma_{2})}
     \]
     
-    The Dirac operator acts on each summand as $\id \otimes D_{\gamma}$, where
-    \[
-    D_{\gamma}(A) := - \sum_{k=1}^n e_k \cdot A \circ (\pi_{\gamma})_* (X_k)
-+ \left( \sum_{i=1}^n \beta_i e_i + \sum_{i<j<k}\alpha_{ijk}e_i \cdot e_j \cdot e_k \right) \cdot A.
-    \]
+    The Dirac operator acts on each summand as $\id \otimes D_{n}$. When $SU(2)$ is equipped with the Berger metric with parameter $T > 0$, 
+  \[
+D_n A = - \sum _k E_k \cdot A \cdot (\pi_n)_*(X_k) - \left( \frac{T}{2} + \frac{1}{T} \right).
+\]
   \end{block}
 \end{frame}
 
 \begin{frame}
-  \begin{block}{Theorem(B\"ar)}
-  When $G = SU(2)$, $H$ is a finite subgroup of $SU(2)$, and $G/H$ is equipped with the Berger metric corresponding to the parameter $T>0$, this becomes
-  \[
-D_n A = - \sum _k e_k \cdot A \cdot (\pi_n)_*(X_k) - \left( \frac{T}{2} + \frac{1}{T} \right).
-\]
-  \end{block}
+	\begin{block}{Orthonormal basis of $\mathfrak{su}(2)$}
+	\[
+	X_1 = \left( \begin{array}{cc}
+0 & i\\
+i & 0
+\end{array} \right), 	X_2 = \left( \begin{array}{cc}
+0 & -1\\
+1 & 0
+\end{array} \right),	X_3 = \frac{1}{T}\left( \begin{array}{cc}
+i & 0\\
+0 & -i
+\end{array} \right),
+	\]
+	\end{block}
+	\begin{block}{Clifford multiplication}
+	\[
+	E_1 = \left( \begin{array}{cc}
+0 & i\\
+i & 0
+\end{array} \right), 	E_2 = \left( \begin{array}{cc}
+0 & -1\\
+1 & 0
+\end{array} \right),	E_3 = \frac{1}{T}\left( \begin{array}{cc}
+i & 0\\
+0 & -i
+\end{array} \right),
+	\]
+	\end{block}
 \end{frame}
 
 \begin{frame}
@@ -648,9 +662,9 @@ D_n A = - \sum _k e_k \cdot A \cdot (\pi_n)_*(X_k) - \left( \frac{T}{2} + \frac{
   \end{block}
   
   \begin{block}{Action of $SU(2)$}
-  	For $A \in SU(2)$,
+  	For $g \in SU(2)$,
 	\[
-	(AP)(z) = P(A\cdot z) 
+	(gP)(z) = P(g\cdot z) 
 	\]
   \end{block}
 \end{frame}
@@ -1018,7 +1032,7 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 \end{frame}
 
 \begin{frame}
-  \frametitle{G3}
+  \frametitle{G3(a),(b)}
     \begin{tabular}[]{l}
 \includegraphics[scale=0.15]{g3}\\
     \end{tabular}
@@ -1176,7 +1190,7 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
   \begin{block}{Casimir operator}
     $\Cas$ acts by the scalar 
     \[
-    <\Lambda, \Lambda> + <\Lambda, 2 \rho>
+    \langle \Lambda, \Lambda \rangle + \langle \Lambda, 2 \rho \rangle
     \]
     on irreducible representations of highest weight $\Lambda$.
   \end{block}
@@ -1194,7 +1208,7 @@ Since $c$ is uniquely determined, we know that $A$ is invertible, so we may solv
 	\alpha(k) = (h_{\alpha}, k)
 	\]
 	\[
-	<\alpha, \beta> = (h_{\alpha}, h_{\beta})
+	\langle \alpha, \beta \rangle = (h_{\alpha}, h_{\beta})
 	\]
 	\end{block}
 	\begin{block}{Weyl vector}
@@ -1313,6 +1327,38 @@ V_{(p-1,q-1)} & p \in \N^{\geq 1}, q \in \N^{\geq 1} \\
 \end{frame}
 
 \begin{frame}
+\begin{block}{Example term}
+\[
+\int_{h_1}^{\infty}\int_{h_2}^{\infty} g(p,q) dp dq\Big \vert_{h_1=0,h_2=0}
+\]
+\begin{align*}
+g(p,q) &= f\left(\frac{(p+1)^2 + (q+1)^2 + (p+1)(q+1) + 3(3t-1)(3t-2)}{\Lambda^2}\right)\\
+&\frac{1} {4}(p+1)^2(q+1)^2(p+q+2)^2.
+\end{align*}
+\end{block}
+\end{frame}
+
+\begin{frame}
+\begin{block}{After changing variables}
+\[
+\Lambda^2 \int_{\frac{1}{\Lambda}}^{\infty} \int_{\frac{1}{\Lambda}}^{\infty} f\left(u^2 + v^2 + uv + \frac{3(3t-1)(3t-2)}{\Lambda^2}\right) P(u,v,\Lambda)du dv.
+\]
+\end{block}
+
+\pause
+
+To obtain series in $\Lambda$, take Taylor expansion in lower limits of integrals and $\Lambda$ term in argument of $f$
+\end{frame}
+
+\begin{frame}
+To constant order in $\Lambda$, only terms of the form
+\[
+\int_{h_1}^{\infty}\int_{h_2}^{\infty} g(p,q) dp dq\Big \vert_{h_1=0,h_2=0}
+\]
+contribute to the spectral action. All other terms cancel out.
+\end{frame}
+
+\begin{frame}
 	\begin{block}{Theorem (Teh)}
 	For general $t$, the spectral action of $SU(3)$ may be computed using the Euler-Maclaurin formula, and is given by
 		{\tiny
@@ -1329,7 +1375,7 @@ V_{(p-1,q-1)} & p \in \N^{\geq 1}, q \in \N^{\geq 1} \\
 \end{frame}
 
 \begin{frame}
-	The end.
+End of presentation
 \end{frame}
 \end{document}
 
